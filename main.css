@@ -112,7 +112,7 @@
 .container-fluid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 90px 1fr;
+  grid-template-rows: 90px 1fr 1fr;
   grid-template-areas: "nav nav nav nav" "about about about about" "about about about about";
 }
 
@@ -142,7 +142,7 @@
 #project-container {
   display: grid;
   grid-template-columns: 47vw 47vw;
-  grid-template-rows: 60vh 30vh;
+  grid-template-rows: 60vh 40vh;
   grid-template-areas: "projects projects projects projects" "learning learning learning learning";
 }
 
@@ -156,6 +156,36 @@
   grid-area: projects;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#footer-container {
+  background-color: rgba(100, 50, 255, 0.3);
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+
+#footer-div {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "contacts books teachers";
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+}
+
+#footer-div ul {
+  position: static;
+  height: 17rem;
+  justify-items: center;
+  list-style-type: none;
+  padding: 1rem auto;
+}
+#footer-div ul li {
+  margin: 1rem 0;
+  font-weight: 700;
 }
 
 *, *::before, *::after {
