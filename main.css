@@ -33,10 +33,15 @@
 
 .about-section {
   background-color: whitesmoke;
+  padding: 1.8rem;
 }
 
 .skills-section {
   background-color: rgba(0, 200, 255, 0.55);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
 }
 
 .skills-list {
@@ -57,9 +62,56 @@
   display: inline-block;
 }
 
+.big-3-title {
+  position: absolute;
+}
+
+.project-container {
+  padding: 0 1rem;
+}
+
+.project-section {
+  padding: 4rem 2rem;
+}
+
+.project-card {
+  background-color: rgba(228, 0, 228, 0.12);
+  margin: 1rem 1rem;
+  padding: 1.2rem 1.4rem;
+}
+
+.learning-list--title {
+  padding: 1rem 2rem;
+  position: absolute;
+}
+
+.learning-section {
+  padding: 1.5rem 0;
+  text-align: start;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.learning-list {
+  overflow-y: hidden;
+  overflow-x: auto;
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.learning-list--item {
+  margin: 2rem 1rem;
+  width: 13rem;
+  height: 10rem;
+  background-color: green;
+}
+
 .container-fluid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 90px 1fr;
   grid-template-areas: "nav nav nav nav" "about about about about" "about about about about";
 }
@@ -67,7 +119,7 @@
 .about-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 40vh 40vh;
+  grid-template-rows: 70vh;
   grid-template-areas: "aboutMe skills skills" "aboutMe skills skills";
 }
 
@@ -80,34 +132,30 @@
 }
 
 #about-section {
-  padding: 1.8rem;
   grid-area: aboutMe;
 }
 
 #skills-section {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 1.8rem;
   grid-area: skills;
 }
 
 #project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "projects projects learning" "projects projects learning";
+  grid-template-columns: 47vw 47vw;
+  grid-template-rows: 60vh 30vh;
+  grid-template-areas: "projects projects projects projects" "learning learning learning learning";
 }
 
 #learning-section {
   background-color: rgba(64, 54, 90, 0.3);
-  width: 40rem;
   grid-area: learning;
 }
 
 #project-section {
   background-color: rgba(200, 54, 90, 0.3);
-  width: 47rem;
   grid-area: projects;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 *, *::before, *::after {

@@ -1,8 +1,9 @@
 @use '../partials/variables.scss' as *;
 
+// Main Grid Set Up
 .container-fluid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 90px 1fr;
     grid-template-areas: "nav nav nav nav"
     "about about about about"
@@ -12,7 +13,7 @@
 .about-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows:40vh 40vh;
+    grid-template-rows: 70vh;
     grid-template-areas: "aboutMe skills skills"
     "aboutMe skills skills";
 }
@@ -20,41 +21,37 @@
 #navbar {
     grid-area: nav;
 }
-
+// About Me Section Set Up
 #about-container {
     grid-area: about;
 }
 
 #about-section {
-    padding: 1.8rem;
     grid-area: aboutMe;
 }
 
 #skills-section {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 1.8rem;
     grid-area: skills;
 }
-
+// Project Section Set Up
 #project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "projects projects learning"
-    "projects projects learning";;
+    grid-template-columns:47vw 47vw;
+    grid-template-rows: 60vh 30vh;
+    grid-template-areas: "projects projects projects projects"
+    "learning learning learning learning";
 }
 
 #learning-section {
     background-color: rgba(64, 54, 90, 0.30);
-    width: 40rem;
     grid-area: learning;
 }
 
 #project-section {
     background-color: rgba(200, 54, 90, 0.30);
-    width: 47rem;
     grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 
