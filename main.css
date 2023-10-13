@@ -1,1 +1,55 @@
-/*# sourceMappingURL=main.css.map */
+.nav-container {
+  width: 100%;
+}
+
+.nav-list, .skills-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list {
+  display: block;
+  text-align: end;
+}
+
+.nav-list--item {
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: end;
+}
+
+h1 {
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-weight: 700 !important;
+  font-size: 2.45rem !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html, body, #main-container {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700 !important;
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-weight: 700 !important;
+  font-size: 2.45rem !important;
+}/*# sourceMappingURL=main.css.map */

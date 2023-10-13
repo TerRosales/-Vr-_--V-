@@ -1,1 +1,21 @@
 @use '../partials/variables.scss' as *;
+// Border Box
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+// Setting Body Width to Stretch
+body {
+    height: 100%;
+    width: 100%;
+}
+// Initializing margins
+html, body,#main-container{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+

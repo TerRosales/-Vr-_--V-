@@ -1,1 +1,23 @@
 @use '../partials/variables.scss' as *;
+
+// Navbar Width To Allow Correct Menu Aligntment
+.nav-container {
+    width: 100%;
+}
+
+.nav-list, .skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list {
+    display: block;
+    text-align: end;
+}
+.nav-list--item {
+    display: inline-block;
+    padding: 15px 25px;
+    text-align: end;
+}
+// End Of Navbar aligntment

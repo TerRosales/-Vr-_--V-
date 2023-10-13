@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <title>Trose-Dev</title>
 </head>
 <body>
-    <div class="container">
+<!-- main-body -->
+    <div id="main-container" class="container-fluid">
+<!-- navbar -->
         <nav id="navbar" class="navbar">
-            <div id="nav-container" class="nav-container">
+            <div id="nav-container"                 class="nav-container">
                 <ul id="nav-list" class="nav-list">
                     <li class="nav-list--item">About</li>
                     <li class="nav-list--item">Experiences</li>
@@ -18,29 +23,39 @@
                 </ul>
             </div>
         </nav>
+<!-- navbar ends -->
+<!-- about  section -->
         <div id="about-container" class="about-container">
+            <!-- about me intro -->
             <section id="about-section" class="about-section">
-                <h1>Terrence Rosales</h1>
+            
+                <h1 class="fs-0 main-title" id="main-tittle">Terrence Rosales</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet quas nam alias laboriosam dolorum eligendi officia neque illo ipsam id quaerat nisi praesentium a doloremque qui, numquam exercitationem iste perspiciatis hic et reiciendis. Aliquam voluptatum consectetur voluptatibus nisi, eos ullam dolore voluptate libero nesciunt maiores inventore id provident? Obcaecati repudiandae vero pariatur quibusdam non velit suscipit voluptatibus quae atque architecto fugiat esse, neque, saepe incidunt blanditiis quos? Molestiae sint laborum perferendis sunt rem est incidunt. Quo eaque, unde cumque, inventore, ducimus facere necessitatibus assumenda reiciendis maxime eligendi fugiat cum. Obcaecati beatae eligendi recusandae eum pariatur dicta vitae eaque quia assumenda.</p>
             </section>
-            <div>
-                <h3>Skills</h3>
+            <!-- about me intro ends -->
+            <!-- skills section -->
+            <div id="skills-container" class="skills-container">
+                <h3 class="skills-h1">Skills</h3>
                 <div>
-                    <ul>
-                        <li>JS</li>
-                        <li>jQuery</li>
-                        <li>D3</li>
-                        <li>Lodash</li>
-                        <li>Astro</li>
-                        <li>HTML</li>
-                        <li>BOOTSTRAP</li>
-                        <li>CSS+SASS</li>
-                        <li>WORDPRESS</li>
+                    <ul id="skills-list" class="skills-list">
+                        <li id="skills-list--item" class="skills-list--item">JS</li>
+                        <li id="skills-list--item" class="skills-list--item">jQuery</li>
+                        <li id="skills-list--item" class="skills-list--item">D3</li>
+                        <li id="skills-list--item" class="skills-list--item">Lodash</li>
+                        <li id="skills-list--item" class="skills-list--item">Astro</li>
+                        <li id="skills-list--item" class="skills-list--item">HTML</li>
+                        <li id="skills-list--item" class="skills-list--item">BOOTSTRAP</li>
+                        <li id="skills-list--item" class="skills-list--item">CSS+SASS</li>
+                        <li id="skills-list--item" class="skills-list--item">WORDPRESS</li>
                     </ul>
                 </div>
             </div>
+            <!-- skills sections ends -->
         </div>
+<!-- about section ends -->
     </div>
+<!-- main-body ends -->
+    <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
