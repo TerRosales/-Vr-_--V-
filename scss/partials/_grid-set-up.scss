@@ -1,2 +1,36 @@
 @use '../partials/variables.scss' as *;
 
+.container-fluid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 1fr;
+    grid-template-areas: "nav nav nav nav"
+    "about about about about"
+    "about about about about";
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    grid-template-areas: "aboutMe skills skills"
+    "aboutMe skills skills";
+}
+
+#navbar {
+    grid-area: nav;
+}
+
+#about-container {
+    grid-area: about;
+}
+
+#about-section {
+    grid-area: aboutMe;
+}
+
+#skills-section {
+    grid-area: skills;
+}
+

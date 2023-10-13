@@ -19,14 +19,73 @@
   text-align: end;
 }
 
-h1 {
-  font-weight: 700 !important;
-  font-size: 3rem !important;
+#main-container {
+  padding: 1.2rem 2rem !important;
 }
 
-h2 {
-  font-weight: 700 !important;
-  font-size: 2.45rem !important;
+.navbar {
+  background-color: rgba(2, 255, 5, 0.3);
+}
+
+.about-container {
+  background-color: grey;
+}
+
+.about-section {
+  background-color: whitesmoke;
+}
+
+.skills-section {
+  background-color: rgba(0, 200, 255, 0.55);
+}
+
+.skills-list {
+  align-items: stretch;
+  text-align: start;
+}
+
+.skills-list--js {
+  transition: all 0.5s ease-in-out;
+}
+
+.skills-list--js:active {
+  display: block;
+}
+
+.skills-list--item {
+  margin: 1.5rem 0.25rem;
+  display: inline-block;
+}
+
+.container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 90px 1fr;
+  grid-template-areas: "nav nav nav nav" "about about about about" "about about about about";
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-template-areas: "aboutMe skills skills" "aboutMe skills skills";
+}
+
+#navbar {
+  grid-area: nav;
+}
+
+#about-container {
+  grid-area: about;
+}
+
+#about-section {
+  grid-area: aboutMe;
+}
+
+#skills-section {
+  grid-area: skills;
 }
 
 *, *::before, *::after {
@@ -42,6 +101,10 @@ body {
 html, body, #main-container {
   margin: 0;
   padding: 0;
+}
+
+.nav-item--list {
+  font-weight: 600;
 }
 
 h1 {

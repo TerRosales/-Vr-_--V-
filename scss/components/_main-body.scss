@@ -1,12 +1,40 @@
 @use '../partials/variables.scss' as *;
 
-
-h1 {
-    font-weight: 700 !important;
-    font-size: 3rem !important;
+#main-container {
+    padding: 1.2rem 2rem!important;
 }
 
-h2 {
-    font-weight: 700 !important;
-    font-size: 2.45rem !important;
+.navbar {
+    background-color: rgba(2, 255, 5, 0.30);
+}
+
+.about-container {
+    background-color: grey;
+}
+
+.about-section {
+    background-color: whitesmoke;
+}
+
+.skills-section {
+    background-color: rgba(0 , 200, 255, 0.55);
+}
+
+.skills-list {
+    align-items: stretch;
+    text-align: start;
+}
+
+.skills-list--js {
+    // display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-list--js:active {
+    display: block;
+}
+
+.skills-list--item {
+    margin: 1.5rem 0.25rem;
+    display: inline-block;
 }

@@ -1,5 +1,9 @@
 @use '../partials/variables.scss' as *;
 
+.nav-item--list {
+    font-weight: 600;
+}
+
 h1 {
     font-weight: 700 !important;
     font-size: 3rem !important;
