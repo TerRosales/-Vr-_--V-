@@ -12,12 +12,20 @@
 }
 
 .nav-list {
-    display: block;
-    text-align: end;
+    align-items: center;
+    display: flex;
+    text-align: start;
+    justify-content: space-evenly;
 }
 .nav-list--item {
     display: inline-block;
     padding: 15px 25px;
-    text-align: end;
 }
+
+.logo-item {
+    justify-content: start;
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
 // End Of Navbar aligntment
