@@ -12,7 +12,7 @@
 
 .about-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 70vh;
     grid-template-areas: "aboutMe skills skills"
     "aboutMe skills skills";
@@ -37,7 +37,7 @@
 #project-container {
     display: grid;
     grid-template-columns:47vw 47vw;
-    grid-template-rows: 60vh 40vh;
+    grid-template-rows: 60vh 35vh;
     grid-template-areas: "projects projects projects projects"
     "learning learning learning learning";
 }

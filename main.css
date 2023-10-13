@@ -71,17 +71,17 @@
 }
 
 .project-section {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .project-card {
   background-color: rgba(228, 0, 228, 0.12);
-  margin: 1rem 1rem;
+  margin: 2rem 1rem;
   padding: 1.2rem 1.4rem;
 }
 
 .learning-list--title {
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   position: absolute;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .learning-list--item {
-  margin: 2rem 1rem;
+  margin: 3rem 1rem;
   width: 13rem;
   height: 10rem;
   background-color: green;
@@ -118,7 +118,7 @@
 
 .about-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 70vh;
   grid-template-areas: "aboutMe skills skills" "aboutMe skills skills";
 }
@@ -142,7 +142,7 @@
 #project-container {
   display: grid;
   grid-template-columns: 47vw 47vw;
-  grid-template-rows: 60vh 40vh;
+  grid-template-rows: 60vh 35vh;
   grid-template-areas: "projects projects projects projects" "learning learning learning learning";
 }
 
