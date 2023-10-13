@@ -67,8 +67,7 @@
 .about-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto;
-  gap: 20px;
+  grid-template-rows: 40vh 40vh;
   grid-template-areas: "aboutMe skills skills" "aboutMe skills skills";
 }
 
@@ -81,11 +80,34 @@
 }
 
 #about-section {
+  padding: 1.8rem;
   grid-area: aboutMe;
 }
 
 #skills-section {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
   grid-area: skills;
+}
+
+#project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "projects projects learning" "projects projects learning";
+}
+
+#learning-section {
+  background-color: rgba(64, 54, 90, 0.3);
+  width: 40rem;
+  grid-area: learning;
+}
+
+#project-section {
+  background-color: rgba(200, 54, 90, 0.3);
+  width: 47rem;
+  grid-area: projects;
 }
 
 *, *::before, *::after {
