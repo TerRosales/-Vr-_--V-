@@ -1,11 +1,10 @@
-const container = document.querySelector(".skills-section-div");
+const container = document.querySelector(".draggable");
 let isDown = false;
 let startX;
 let scrollLeft;
 
 container.addEventListener("mousedown", (e) => {
     isDown = true;
-    container.style.cursor = "grabbing"; // Change cursor style when dragging
     startX = e.pageX - container.offsetLeft;
     scrollLeft = container.scrollLeft;
 });
@@ -22,6 +21,31 @@ container.addEventListener("mousemove", (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX) * 2; // Adjust scroll speed
+    const walk = (x - startX) * 1.6; // Adjust scroll speed
     container.scrollLeft = scrollLeft - walk;
+});
+
+
+const containerLearning = document.getElementById('learning-section');
+let isDragging = false;
+
+containerLearning.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startX = e.pageX - containerLearning.offsetLeft;
+    scrollLeft = containerLearning.scrollLeft;
+});
+
+containerLearning.addEventListener('mouseleave', () => {
+    isDragging = false;
+});
+
+containerLearning.addEventListener('mouseup', () => {
+    isDragging = false;
+});
+
+containerLearning.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    const x = e.pageX - containerLearning.offsetLeft;
+    const walk = (x - startX) * 0.8; // Adjust the factor to control scrolling speed
+    containerLearning.scrollLeft = scrollLeft - walk;
 });

@@ -3,13 +3,13 @@
     transform: translateX(0rem);
   }
   33% {
-    transform: translateX(-115rem);
+    transform: translateX(-125rem);
   }
   66% {
-    transform: translateX(0rem);
+    transform: translateX(1rem);
   }
   100% {
-    transform: translateX(-115rem);
+    transform: translateX(-125rem);
   }
 }
 @keyframes slide-animation {
@@ -17,13 +17,13 @@
     transform: translateX(0rem);
   }
   33% {
-    transform: translateX(-115rem);
+    transform: translateX(-125rem);
   }
   66% {
-    transform: translateX(0rem);
+    transform: translateX(1rem);
   }
   100% {
-    transform: translateX(-115rem);
+    transform: translateX(-125rem);
   }
 }
 .about-container {
@@ -86,8 +86,8 @@
   text-align: start;
   -webkit-animation: slide-animation;
           animation: slide-animation;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
@@ -258,7 +258,7 @@
 #project-container {
   display: grid;
   grid-template-columns: 47vw 47vw;
-  grid-template-rows: 60vh 31.5vh;
+  grid-template-rows: 60vh 40vh;
   grid-template-areas: "projects projects projects projects" "learning learning learning learning";
 }
 
