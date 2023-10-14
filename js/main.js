@@ -1,27 +1,29 @@
-const container = document.querySelector('.skills-list');
-const list = container.querySelector('ul');
+const container = document.querySelector(".skills-section-div");
+let isDown = false;
+let startX;
+let scrollLeft;
 
-let isDragging = false;
-let startY;
-let scrollTop;
-
-container.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startY = e.clientY - container.getBoundingClientRect().top;
-  scrollTop = container.scrollTop;
+container.addEventListener("mousedown", (e) => {
+    isDown = true;
+    container.style.cursor = "grabbing"; // Change cursor style when dragging
+    startX = e.pageX - container.offsetLeft;
+    scrollLeft = container.scrollLeft;
 });
 
-document.addEventListener('mousemove', (e) => {
-  if (!isDragging) return;
-  const y = e.clientY - container.getBoundingClientRect().top;
-  const deltaY = y - startY;
-  container.scrollTop = scrollTop + deltaY;
+container.addEventListener("mouseleave", () => {
+    isDown = false;
+    container.style.cursor = "grab"; // Restore cursor style
 });
 
-document.addEventListener('mouseup', () => {
-  isDragging = false;
+container.addEventListener("mouseup", () => {
+    isDown = false;
+    container.style.cursor = "grab"; // Restore cursor style
 });
 
-document.addEventListener('mouseleave', () => {
-  isDragging = false;
+container.addEventListener("mousemove", (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - container.offsetLeft;
+    const walk = (x - startX) * 2; // Adjust scroll speed
+    container.scrollLeft = scrollLeft - walk;
 });
