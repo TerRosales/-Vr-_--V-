@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @-webkit-keyframes slide-animation {
   0% {
     transform: translateX(0rem);
@@ -12,6 +13,8 @@
     transform: translateX(-125rem);
   }
 }
+=======
+>>>>>>> cce7c70edd3053edbc33fcc63c8090651b3a4828
 @keyframes slide-animation {
   0% {
     transform: translateX(0rem);
@@ -55,6 +58,7 @@
   height: 12rem;
   padding: 3rem 0rem;
   overflow-y: hidden;
+  cursor: default;
 }
 
 ::-webkit-scrollbar {
@@ -78,12 +82,12 @@
 }
 
 .skills-list {
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   height: 20vh;
   align-items: stretch;
   text-align: start;
+<<<<<<< HEAD
   -webkit-animation: slide-animation;
           animation: slide-animation;
   -webkit-animation-duration: 45s;
@@ -92,11 +96,17 @@
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+=======
+  animation: slide-animation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: default;
+>>>>>>> cce7c70edd3053edbc33fcc63c8090651b3a4828
 }
 
 .skills-list:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .skills-list--js {
@@ -112,6 +122,7 @@
   display: inline-block;
   margin-right: 5rem;
   transition: all 0.22s ease-in;
+  cursor: default;
 }
 
 .skills-list--item:hover {
