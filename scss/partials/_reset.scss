@@ -2,6 +2,8 @@
 // Border Box
 *, *::before, *::after {
     box-sizing: border-box;
+}
+* {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 // Setting Body Width to Stretch
@@ -9,12 +11,28 @@ body {
     overflow-x: hidden;
     height: 100%;
     width: 100%;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 // Initializing margins
 html, body,#main-container{
     margin: 0;
     padding: 0;
 }
+
+.sizing-for-icon {
+    font-size: 80px;
+}
+
+.sizing-svg-icon {
+    position: relative;
+    bottom: 1.2rem;
+}
+
+
+
 
 
 

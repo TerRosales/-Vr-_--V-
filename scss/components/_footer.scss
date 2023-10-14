@@ -1,1 +1,22 @@
 @use '../partials/variables.scss' as *;
+
+#footer-container {
+    background-color: rgba(100, 50, 255, 0.30);
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+
+
+#footer-div ul {
+    position: static;
+    height: 17rem;
+    justify-items: center;
+    list-style-type: none;
+    padding: 1rem auto;
+    li {
+        margin: 1rem 0;
+        font-weight: 500;
+    } 
+}

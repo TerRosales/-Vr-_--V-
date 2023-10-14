@@ -1,0 +1,52 @@
+@use '../partials/variables.scss' as *;
+
+.about-container {
+    background-color: grey;
+}
+
+.about-section {
+    background-color: whitesmoke;
+    padding: 8rem 2rem;
+}
+
+.skills-section {
+    background-color: rgba(190 , 200, 255, 0.55);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+}
+
+.skills-section {
+    overflow-wrap: none;
+}
+
+.skills-section-div {
+    overflow-wrap:normal;
+}
+
+.skills-h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-list {
+    align-items: stretch;
+    text-align: start;
+}
+
+.skills-list--js {
+    // display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-list--js:active {
+    display: block;
+}
+
+.skills-list--item {
+    margin: 1.5rem 0.25rem;
+    display: inline-block;
+    margin: 2rem 1.1rem;
+}

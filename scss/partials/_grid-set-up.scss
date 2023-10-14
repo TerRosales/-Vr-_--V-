@@ -12,8 +12,8 @@
 
 .about-container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 70vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85vh;
     grid-template-areas: "aboutMe skills skills"
     "aboutMe skills skills";
 }
@@ -37,7 +37,7 @@
 #project-container {
     display: grid;
     grid-template-columns:47vw 47vw;
-    grid-template-rows: 60vh 35vh;
+    grid-template-rows: 60vh 40vh;
     grid-template-areas: "projects projects projects projects"
     "learning learning learning learning";
 }
@@ -54,13 +54,6 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-#footer-container {
-    background-color: rgba(100, 50, 255, 0.30);
-    position: absolute;
-    display: flex;
-    width: 100%;
-}
-
 #footer-div {
     padding: 2rem;
     display: grid;
@@ -72,17 +65,7 @@
     text-align: start;
 }
 
-#footer-div ul {
-    position: static;
-    height: 17rem;
-    justify-items: center;
-    list-style-type: none;
-    padding: 1rem auto;
-    li {
-        margin: 1rem 0;
-        font-weight: 700;
-    } 
-}
+
 
 
 
