@@ -20,7 +20,8 @@
 }
 
 .skills-section-div {
-  overflow-wrap: normal;
+  white-space: nowrap;
+  overflow-x: scroll;
 }
 
 .skills-h1 {
@@ -45,7 +46,7 @@
 .skills-list--item {
   margin: 1.5rem 0.25rem;
   display: inline-block;
-  margin: 2rem 1.1rem;
+  margin-right: 2rem;
 }
 
 .big-3-title {
@@ -188,7 +189,7 @@
 #project-container {
   display: grid;
   grid-template-columns: 47vw 47vw;
-  grid-template-rows: 60vh 40vh;
+  grid-template-rows: 60vh 31.5vh;
   grid-template-areas: "projects projects projects projects" "learning learning learning learning";
 }
 
