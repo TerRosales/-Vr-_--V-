@@ -58,7 +58,7 @@
     align-items: stretch;
     text-align: start;
     animation: slide-animation;
-    animation-duration: 30s;
+    animation-duration: 40s;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
@@ -86,5 +86,5 @@
 }
 
 .skills-list--item:hover {
-    transform: scale(1.32) translateY(-1.3rem);
+    transform: scale(1.52) translateY(-1.12rem);
 }

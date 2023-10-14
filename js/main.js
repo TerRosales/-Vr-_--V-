@@ -12,12 +12,10 @@ container.addEventListener("mousedown", (e) => {
 
 container.addEventListener("mouseleave", () => {
     isDown = false;
-    container.style.cursor = "grab"; // Restore cursor style
 });
 
 container.addEventListener("mouseup", () => {
     isDown = false;
-    container.style.cursor = "grab"; // Restore cursor style
 });
 
 container.addEventListener("mousemove", (e) => {

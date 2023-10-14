@@ -1,3 +1,17 @@
+@-webkit-keyframes slide-animation {
+  0% {
+    transform: translateX(0rem);
+  }
+  33% {
+    transform: translateX(-115rem);
+  }
+  66% {
+    transform: translateX(0rem);
+  }
+  100% {
+    transform: translateX(-115rem);
+  }
+}
 @keyframes slide-animation {
   0% {
     transform: translateX(0rem);
@@ -64,19 +78,25 @@
 }
 
 .skills-list {
-  scroll-snap-type: x mandatory;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   height: 20vh;
   align-items: stretch;
   text-align: start;
-  animation: slide-animation;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  -webkit-animation: slide-animation;
+          animation: slide-animation;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .skills-list:hover {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 .skills-list--js {
@@ -95,7 +115,7 @@
 }
 
 .skills-list--item:hover {
-  transform: scale(1.32) translateY(-1.3rem);
+  transform: scale(1.52) translateY(-1.12rem);
 }
 
 .big-3-title {
@@ -198,7 +218,7 @@
 }
 
 #main-container {
-  padding: 1.2rem 2rem !important;
+  padding: 0.1rem 2rem !important;
 }
 
 .navbar {
@@ -309,4 +329,12 @@ h1 {
 h2 {
   font-weight: 700 !important;
   font-size: 2.45rem !important;
+}
+
+.skills-h1 {
+  text-shadow: 2px 9px 12px rgba(2, 2, 2, 0.15);
+}
+
+.skills-list--item {
+  text-shadow: 2px 9px 12px rgba(2, 2, 2, 0.15);
 }/*# sourceMappingURL=main.css.map */
