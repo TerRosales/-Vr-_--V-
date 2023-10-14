@@ -17,3 +17,20 @@ $dim-c60:rgba(255, 64, 87, 0.20);
 // $p-top;
 // $p-bottom;
 // $p-sides;
+
+@keyframes slide-animation {
+    0% {
+        transform: translateX(0rem);
+    }
+    33% {
+        transform: translateX(-115rem);
+    }
+    66% {
+        transform: translateX(0rem);
+    }
+    100% {
+        transform: translateX(-115rem);
+    }
+
+
+}

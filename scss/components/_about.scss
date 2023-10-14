@@ -14,7 +14,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 1.8rem;
+    padding: 2.8rem;
 }
 
 .skills-section {
@@ -25,30 +25,46 @@
 .skills-section-div {
     white-space: nowrap;
     overflow-x: scroll;
+    margin: 1rem 0.5rem;
+    height: 12rem;
+    padding: 3rem 0rem;
+    overflow-y: hidden;
 }
 
 ::-webkit-scrollbar {
-    width:  0.1rem;
-    height: 0.1rem;
+    width:  0.3rem;
+    height: 0.3rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(2, 2, 2, 0.12);
 }
 
 ::-webkit-scrollbar-track {
-    background:  rgba(255, 255, 255, 0.01);
+    background:  rgba(255, 255, 255, 0.22);
 }
 
 .skills-h1 {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin: 2rem 0rem;
 }
 
 .skills-list {
+    height: 20vh;
     align-items: stretch;
     text-align: start;
+    animation: slide-animation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+
+.skills-list:hover {
+    animation-play-state: paused;
 }
 
 .skills-list--js {
@@ -63,5 +79,10 @@
 .skills-list--item {
     margin: 1.5rem 0.25rem;
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 5rem;
+    transition: all 0.22s ease-in;
+}
+
+.skills-list--item:hover {
+    transform: scale(1.32) translateY(-1.3rem);
 }
