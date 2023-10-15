@@ -26,7 +26,7 @@
     white-space: nowrap;
     overflow-x: scroll;
     margin: 1rem 0.5rem;
-    height: 32vh;
+    height: 38vh;
     padding: 3rem 0rem;
     overflow-y: hidden;
     cursor:default;
@@ -107,8 +107,9 @@
     color: black;
     content: url('https://img.icons8.com/3d-fluency/94/unicorn.png');
     background-color: rgba(255 , 255, 255, 0.15);
+    font-size: 20px;
     width: 11rem;
-    height: 4rem;
+    height: 3rem;
     position: absolute;
     top: 3.7rem;
     animation: expand-animation;
@@ -125,11 +126,11 @@
     content: "Amazing Tool";
     background-color: rgba(190 , 200, 255, 0.55);
     width: 11rem;
-    height: 4rem;
+    height: 3rem;
     position: absolute;
     top: 4rem;
     animation: expand-animation-2;
-    animation-duration: 1.2s;
+    animation-duration: 1.1s;
     animation-fill-mode: forwards;
     background-color: rgba(10, 10, 10, 0.55);
     transform:  scale(1.24) 

@@ -81,11 +81,11 @@ $dim-c60:rgba(255, 64, 87, 0.20);
     }
     75%{
         width: 11rem;
-        height: 4.2rem;
+        height: 3.2rem;
     }
     100%{
         width: 11rem;
-        height: 4.5rem;
+        height: 3.5rem;
         opacity: 1;
     }
 }
@@ -103,12 +103,12 @@ $dim-c60:rgba(255, 64, 87, 0.20);
     }
     75%{
         width: 11rem;
-        height: 4.2rem;
+        height: 3.2rem;
         opacity: 0.25;
     }
     100%{
         width: 11rem;
-        height: 4.5rem;
+        height: 3.5rem;
         opacity: 1;
         transform: perspective(600px);
         background-color: rgba(10, 10, 10, 0.95);
@@ -167,11 +167,11 @@ $dim-c60:rgba(255, 64, 87, 0.20);
     }
     50% {
         transform: translateY(-200%);
-        color: rgba(230, 230, 0, 1);
+        color: rgba(255, 30, 200, .89);
     }
     60%{
         transform: translateY(-312%);
-        color: rgba(230, 230, 0, 1);
+        color: rgba(255, 30, 200, .89);
     }
     70% {
         transform: translateY(-300%);
