@@ -26,10 +26,11 @@
     white-space: nowrap;
     overflow-x: scroll;
     margin: 1rem 0.5rem;
-    height: 12rem;
+    height: 32vh;
     padding: 3rem 0rem;
     overflow-y: hidden;
     cursor:default;
+    background-color: rgba(0, 80, 10, 0.12);
 }
 
 ::-webkit-scrollbar {
@@ -89,5 +90,102 @@
 }
 
 .skills-list--item:hover {
-    transform: scale(1.52) translateY(-1.12rem);
+    cursor: pointer;
+    z-index: 3;
+    transform:  scale(1.52) 
+                translateY(-1.12rem)
+                perspective(600px) 
+                rotateX(20deg) 
+                rotateY(20deg);
+    transition: all 0.2s ease-in-out;    
+}
+
+
+.skills-list--item:active::before {
+    cursor: default;
+    z-index: 2;
+    color: black;
+    content: url('https://img.icons8.com/3d-fluency/94/unicorn.png');
+    background-color: rgba(255 , 255, 255, 0.15);
+    width: 11rem;
+    height: 4rem;
+    position: absolute;
+    top: 3.7rem;
+    animation: expand-animation;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.skills-list--item:active::after {
+    cursor: default;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.9);
+    content: "Amazing Tool";
+    background-color: rgba(190 , 200, 255, 0.55);
+    width: 11rem;
+    height: 4rem;
+    position: absolute;
+    top: 4rem;
+    animation: expand-animation-2;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    background-color: rgba(10, 10, 10, 0.55);
+    transform:  scale(1.24) 
+                translateY(0)
+                perspective(100px)
+                translateX(-2rem);
+    opacity: 0;
+}
+
+.wrapper {
+    background-color: rgba(220, 250, 200, 0.72);
+    display: flex;
+    height: 3rem;
+    text-align: center;
+    justify-content: center;
+    overflow-y: hidden;
+    margin: 4.5rem auto 7rem;
+}
+
+.words-left, .words-right {
+    z-index: 1;
+    display: block;
+    width: 9rem;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.words-left{
+    z-index: 1;
+    animation: text-scroll-up;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    transform: translateY(-500%);
+    font-weight: 600;
+}
+
+.words-right{
+    z-index: 1;
+    animation: text-scroll-up-2;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    transform: translateY(-500%);
+    font-weight: 600;
+}
+
+
+
+.words-middle {
+    z-index: 1;
+    display: block;
+    width: 8rem;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+    animation: text-scroll-down;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    transform: translateY(400%);
 }

@@ -1,4 +1,8 @@
-const container = document.querySelector(".draggable");
+const container = document.querySelector(".skills-section-div");
+const containerLearning = document.getElementById('learning-section');
+
+
+let isDragging = false;
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -21,13 +25,9 @@ container.addEventListener("mousemove", (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - container.offsetLeft;
-    const walk = (x - startX) * 1.6; // Adjust scroll speed
+    const walk = (x - startX) * 1.2; // Adjust scroll speed
     container.scrollLeft = scrollLeft - walk;
 });
-
-
-const containerLearning = document.getElementById('learning-section');
-let isDragging = false;
 
 containerLearning.addEventListener('mousedown', (e) => {
     isDragging = true;
@@ -49,3 +49,4 @@ containerLearning.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 0.8; // Adjust the factor to control scrolling speed
     containerLearning.scrollLeft = scrollLeft - walk;
 });
+

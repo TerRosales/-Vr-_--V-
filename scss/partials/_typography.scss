@@ -21,3 +21,7 @@ h2 {
 .skills-list--item {
     text-shadow: 2px 9px  12px rgba(2, 2, 2, 0.15);
 }
+
+.skills-list--item:hover {
+    text-shadow: -12px 20px  13px rgba(2, 2, 2, 0.15);
+}
