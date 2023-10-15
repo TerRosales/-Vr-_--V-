@@ -95,7 +95,7 @@
   0% {
     transform: translateY(0%) scale(1.5);
   }
-  20% {
+  25% {
     transform: translateY(-112%);
   }
   30% {
@@ -128,7 +128,7 @@
     transform: translateY(0%) scale(1.5);
     color: rgb(255, 50, 250);
   }
-  20% {
+  25% {
     transform: translateY(-112%);
     color: rgb(255, 50, 50);
   }
@@ -169,7 +169,7 @@
   0% {
     transform: translateY(-400%) scale(1.5);
   }
-  20% {
+  25% {
     transform: translateY(-388%);
   }
   30% {
@@ -203,7 +203,7 @@
 
 .about-section {
   background-color: whitesmoke;
-  padding: 8rem 2rem;
+  padding: 11.5rem 2rem;
 }
 
 .skills-section {
@@ -254,10 +254,33 @@
   align-items: stretch;
   text-align: start;
   animation: slide-animation;
-  animation-duration: 45s;
+  animation-duration: 32s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   cursor: default;
+}
+
+.skills-section-div::before {
+  bottom: 16.5rem;
+  width: 20rem;
+  height: 38vh;
+  display: flex;
+  z-index: 2;
+  position: absolute;
+  content: "hello world";
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
+}
+
+.skills-section-div::after {
+  left: 36rem;
+  bottom: 15rem;
+  width: 20rem;
+  height: 37.5vh;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  content: "hello world";
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.62), rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
 }
 
 .skills-list:hover {
@@ -344,7 +367,7 @@
 .words-left {
   z-index: 1;
   animation: text-scroll-up;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-fill-mode: both;
   transform: translateY(-500%);
   font-weight: 600;
@@ -353,7 +376,7 @@
 .words-right {
   z-index: 1;
   animation: text-scroll-up-2;
-  animation-duration: 4s;
+  animation-duration: 5.12s;
   animation-fill-mode: both;
   transform: translateY(-500%);
   font-weight: 600;
@@ -366,7 +389,7 @@
   font-size: 2rem;
   transition: all 0.5s ease-in-out;
   animation: text-scroll-down;
-  animation-duration: 4s;
+  animation-duration: 4.5s;
   animation-fill-mode: both;
   transform: translateY(400%);
 }
