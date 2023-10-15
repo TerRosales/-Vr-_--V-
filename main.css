@@ -492,12 +492,13 @@
   z-index: 2;
   color: black;
   content: url("https://img.icons8.com/3d-fluency/94/unicorn.png");
-  background-color: rgba(255, 255, 255, 0.15);
+  background-image: url("//unsplash.it/100/20");
   font-size: 20px;
   width: 11rem;
-  height: 3rem;
+  height: 5rem;
   position: absolute;
   top: 3.7rem;
+  left: 2rem;
   -webkit-animation: expand-animation;
           animation: expand-animation;
   -webkit-animation-duration: 1.2s;
@@ -511,21 +512,19 @@
 .skills-list--item:active::after {
   cursor: default;
   z-index: 1;
-  color: rgba(255, 255, 255, 0.9);
   content: "Amazing Tool";
-  background-color: rgba(190, 200, 255, 0.55);
+  background-image: url("//unsplash.it/100/20");
   width: 11rem;
-  height: 3rem;
+  height: 4rem;
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   -webkit-animation: expand-animation-2;
           animation: expand-animation-2;
   -webkit-animation-duration: 1.1s;
           animation-duration: 1.1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  background-color: rgba(10, 10, 10, 0.55);
-  transform: scale(1.24) translateY(0) perspective(100px) translateX(-2rem);
+  transform: scale(1.24) translateY(0) perspective(150px) translateX(-2rem);
   opacity: 0;
 }
 
