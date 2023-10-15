@@ -63,37 +63,6 @@
     cursor:default;
 }
 
-.skills-section-div::before {
-    bottom: 16.5rem;
-    width: 20rem; height: 38vh;
-    display: flex;
-    z-index: 2;
-    position: absolute;
-    content: 'hello world';
-    background-image: linear-gradient(to right, rgba(255, 255, 255, .62), 
-                                    rgba(255, 255, 255, .35), 
-                                    rgba(255, 255, 255, .15),
-                                    rgba(255, 255, 255, .05),
-                                    rgba(255, 255, 255, .01));
-}
-
-.skills-section-div::after {
-    left: 36rem;
-    bottom: 15rem;
-    width: 20rem; height: 37.5vh;
-    display: flex;
-    z-index: 2;
-    position: relative;
-    content: 'hello world';
-    background-image: linear-gradient(to left, rgba(255, 255, 255, .62), 
-                                    rgba(255, 255, 255, .35), 
-                                    rgba(255, 255, 255, .15),
-                                    rgba(255, 255, 255, .05),
-                                    rgba(255, 255, 255, .01));
-}
-
-
-
 .skills-list:hover {
     animation-play-state: paused;
 }
