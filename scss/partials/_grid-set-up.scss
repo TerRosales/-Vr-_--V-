@@ -37,7 +37,7 @@
 #project-container {
     display: grid;
     grid-template-columns:47vw 47vw;
-    grid-template-rows: 60vh 40vh;
+    grid-template-rows: 90vh 70vh;
     grid-template-areas: "projects projects projects projects"
     "learning learning learning learning";
 }
@@ -45,13 +45,17 @@
 #learning-section {
     background-color: rgba(64, 54, 90, 0.30);
     grid-area: learning;
+    margin-top: 5rem
 }
 
 #project-section {
     background-color: rgba(200, 54, 90, 0.30);
     grid-area: projects;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    // grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    z-index: 1;
+    overflow-y: scroll;
 }
 
 #footer-div {
