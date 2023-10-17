@@ -143,17 +143,17 @@
     opacity: 0.1;
   }
   50% {
-    width: 11rem;
+    width: 8rem;
     height: 0.2rem;
     opacity: 0.15;
   }
   75% {
-    width: 11rem;
+    width: 8rem;
     height: 3.2rem;
     opacity: 0.25;
   }
   100% {
-    width: 11rem;
+    width: 8rem;
     height: 3.5rem;
     opacity: 1;
     transform: perspective(600px);
@@ -167,17 +167,17 @@
     opacity: 0.1;
   }
   50% {
-    width: 11rem;
+    width: 8rem;
     height: 0.2rem;
     opacity: 0.15;
   }
   75% {
-    width: 11rem;
+    width: 8rem;
     height: 3.2rem;
     opacity: 0.25;
   }
   100% {
-    width: 11rem;
+    width: 8rem;
     height: 3.5rem;
     opacity: 1;
     transform: perspective(600px);
@@ -491,8 +491,8 @@
   cursor: default;
   z-index: 2;
   color: black;
+  background-image: linear-gradient(to right, green, black, white);
   content: url("https://img.icons8.com/3d-fluency/94/unicorn.png");
-  background-image: url("//unsplash.it/100/20");
   font-size: 20px;
   width: 11rem;
   height: 5rem;
@@ -511,13 +511,14 @@
 
 .skills-list--item:active::after {
   cursor: default;
-  z-index: 1;
+  background-image: linear-gradient(to right, white, black, green);
+  z-index: 3;
   content: "Amazing Tool";
-  background-image: url("//unsplash.it/100/20");
-  width: 11rem;
+  width: 8rem;
   height: 4rem;
   position: absolute;
   top: 3rem;
+  right: -10rem;
   -webkit-animation: expand-animation-2;
           animation: expand-animation-2;
   -webkit-animation-duration: 1.1s;
@@ -631,30 +632,13 @@
   background-color: green;
 }
 
+.project-card--details {
+  background-color: aquamarine;
+}
+
 .project-card {
   width: 20rem;
   height: 17rem;
-}
-
-.project-card:hover::after {
-  content: "hi";
-  position: fixed;
-  z-index: 2;
-  width: 30rem;
-  height: 25rem;
-  background: purple;
-  bottom: 2rem;
-  left: 50%;
-}
-
-.project-card:hover::before {
-  content: "hi";
-  position: fixed;
-  z-index: 2;
-  width: 35rem;
-  height: 27rem;
-  background: white;
-  left: 47%;
 }
 
 #footer-container {
@@ -754,8 +738,30 @@
 #project-container {
   display: grid;
   grid-template-columns: 47vw 47vw;
-  grid-template-rows: 90vh 70vh;
+  grid-template-rows: 80vh 70vh;
   grid-template-areas: "projects projects projects projects" "learning learning learning learning";
+}
+
+.project-section {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: 1fr;
+  grid-template-areas: "cards details";
+  overflow-x: hidden;
+}
+
+.project-card--container {
+  grid-area: cards;
+}
+
+.project-card--details {
+  grid-area: details;
+  width: 38rem;
+  height: 65%;
+  position: relative;
+  top: 7%;
+  right: 20%;
+  z-index: 2;
 }
 
 #learning-section {
@@ -767,10 +773,10 @@
 #project-section {
   background-color: rgba(200, 54, 90, 0.3);
   grid-area: projects;
-  display: flex;
   flex-direction: column;
   z-index: 1;
   overflow-y: scroll;
+  transition: all 5s ease-in-out;
 }
 
 #footer-div {

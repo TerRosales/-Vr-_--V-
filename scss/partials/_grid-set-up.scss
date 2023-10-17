@@ -37,10 +37,41 @@
 #project-container {
     display: grid;
     grid-template-columns:47vw 47vw;
-    grid-template-rows: 90vh 70vh;
+    grid-template-rows: 80vh 70vh;
     grid-template-areas: "projects projects projects projects"
     "learning learning learning learning";
 }
+
+.project-section {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr;
+    grid-template-areas: "cards details";
+    overflow-x: hidden;
+}
+
+.project-card--container {
+    grid-area: cards;
+}
+
+.project-card--details {
+    grid-area: details;
+    width: 38rem; height: 65%;
+    position: relative;
+    top: 7%;
+    right: 20%;
+    z-index: 2;
+}
+
+// .hidden {
+//     grid-area: details;
+//     width: 38rem; height: 65%;
+//     position: relative;
+//     top: 7%;
+//     right: 20%;
+//     z-index: 2;
+//     display: none;
+// }
 
 #learning-section {
     background-color: rgba(64, 54, 90, 0.30);
@@ -51,12 +82,13 @@
 #project-section {
     background-color: rgba(200, 54, 90, 0.30);
     grid-area: projects;
-    display: flex;
     // grid-template-columns: 1fr 1fr 1fr;
     flex-direction: column;
     z-index: 1;
     overflow-y: scroll;
+    transition: all 5s ease-in-out;
 }
+
 
 #footer-div {
     padding: 2rem;

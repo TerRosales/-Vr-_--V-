@@ -96,8 +96,8 @@
     cursor: default;
     z-index: 2;
     color: black;
+    background-image: linear-gradient(to right, green, black , white);
     content: url('https://img.icons8.com/3d-fluency/94/unicorn.png');
-    background-image: url('//unsplash.it/100/20');
     font-size: 20px;
     width: 11rem;
     height: 5rem;
@@ -113,13 +113,14 @@
 
 .skills-list--item:active::after {
     cursor: default;
-    z-index: 1;
+    background-image: linear-gradient(to right, white, black , green);
+    z-index: 3;
     content: "Amazing Tool";
-    background-image: url('//unsplash.it/100/20');
-    width: 11rem;
+    width: 8rem;
     height: 4rem;
     position: absolute;
     top: 3rem;
+    right: -10rem;
     animation: expand-animation-2;
     animation-duration: 1.1s;
     animation-fill-mode: forwards;
