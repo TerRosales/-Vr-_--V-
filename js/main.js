@@ -1,6 +1,8 @@
 const container = document.querySelector(".skills-section-div");
 const containerLearning = document.getElementById('learning-section');
 
+const mainTitle = document.getElementById('main-title');
+
 
 let isDragging = false;
 let isDown = false;

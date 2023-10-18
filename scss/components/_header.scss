@@ -2,18 +2,24 @@
 
 // Navbar Width To Allow Correct Menu Aligntment
 .navbar {
-    border-width: 0px 0px 6px 6px;
-    border-style: solid;
-    border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99),
-    rgba(2, 2, 2, 0.30), 
-    rgba(2, 2, 2, 0.15), 
-    rgba(2, 2, 2, 0.05),
-    rgba(2, 2, 2, 0)98%);
-    border-image-slice: 1;
+    
 }
 
 .nav-container {
+    background-color: rgba(255, 255, 255, 0.99);
     width: 100%;
+    position: fixed;
+    z-index: 2;
+    border-width: 0px 0px 2.5px 2.5px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.60), 
+    rgba(2, 2, 2, 0.45), 
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0)98%);
+    border-image-slice: 1;
+    box-shadow: -10px 10px 10px 1px rgba(73,242,170, .15);
+    padding: 0.2rem 5% 0.2rem 0rem;
 }
 
 .nav-list, .skills-list {
@@ -30,7 +36,7 @@
 }
 .nav-list--item {
     display: inline-block;
-    padding: 15px 25px;
+    padding: 15px 10px;
 }
 
 .logo-item {

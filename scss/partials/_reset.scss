@@ -23,12 +23,16 @@ html, body,#main-container{
 }
 
 .sizing-for-icon {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .sizing-svg-icon {
     position: relative;
-    bottom: 1.2rem;
+    bottom: 1rem;
+}
+
+.lodash-icon {
+    bottom: 0;
 }
 
 

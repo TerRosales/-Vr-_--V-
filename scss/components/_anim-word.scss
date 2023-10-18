@@ -7,12 +7,21 @@
     justify-content: center;
     overflow-y: hidden;
     margin: 4.5rem auto 4.5rem;
-    box-shadow: -10px 10px 10px 1px rgba(2, 2, 2, .18);
+    box-shadow: -10px 10px 10px 1px rgba(73,242,170, .15);;
     width: 27rem;
+    border-width: 0px 0px 2px 2px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.60), 
+    rgba(2, 2, 2, 0.45), 
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0)98%);
+    border-image-slice: 1;
 }
 
 .words-left, .words-right {
     z-index: 1;
+    font-size: 1.55rem;
     display: block;
     width: 9.4rem;
     transition: all 0.5s ease-in-out;
@@ -39,6 +48,7 @@
 
 
 .words-middle {
+    font-size: 1.55rem;
     z-index: 1;
     display: block;
     width: 8rem;
