@@ -131,54 +131,6 @@
     opacity: 0;
 }
 
-.wrapper {
-    display: flex;
-    height: 3rem;
-    text-align: center;
-    justify-content: center;
-    overflow-y: hidden;
-    margin: 4.5rem auto 4.5rem;
-}
-
-.words-left, .words-right {
-    z-index: 1;
-    display: block;
-    width: 9rem;
-    transition: all 0.5s ease-in-out;
-}
-
-.words-left{
-    z-index: 1;
-    animation: text-scroll-up;
-    animation-duration: 5s;
-    animation-fill-mode: both;
-    transform: translateY(-500%);
-    font-weight: 500;
-}
-
-.words-right{
-    z-index: 1;
-    animation: text-scroll-up-2;
-    animation-duration: 5.12s;
-    animation-fill-mode: both;
-    transform: translateY(-500%);
-    font-weight: 500;
-}
-
-
-
-.words-middle {
-    z-index: 1;
-    display: block;
-    width: 8rem;
-    transition: all 0.5s ease-in-out;
-    animation: text-scroll-down;
-    animation-duration: 4.5s;
-    animation-fill-mode: both;
-    transform: translateY(400%);
-    font-weight: 400;
-    font-size: 2rem;
-}
 // *-------------------------------Save For Later Fade effect for side scroling skills list, this feature currently works on PC but not on the mac
 // .skills-section-div::before {
 //     bottom: 16.5rem;

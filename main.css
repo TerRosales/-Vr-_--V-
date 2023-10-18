@@ -259,15 +259,15 @@
   }
   30% {
     transform: translateY(-100%);
-    color: rgb(46, 190, 120);
+    color: rgb(146, 190, 120);
   }
   40% {
     transform: translateY(-212%);
-    color: rgb(46, 190, 120);
+    color: rgba(12, 255, 174, 0.8);
   }
   50% {
     transform: translateY(-200%);
-    color: rgba(255, 30, 200, 0.89);
+    color: rgba(12, 255, 174, 0.8);
   }
   60% {
     transform: translateY(-312%);
@@ -301,15 +301,15 @@
   }
   30% {
     transform: translateY(-100%);
-    color: rgb(46, 190, 120);
+    color: rgb(146, 190, 120);
   }
   40% {
     transform: translateY(-212%);
-    color: rgb(46, 190, 120);
+    color: rgba(12, 255, 174, 0.8);
   }
   50% {
     transform: translateY(-200%);
-    color: rgba(255, 30, 200, 0.89);
+    color: rgba(12, 255, 174, 0.8);
   }
   60% {
     transform: translateY(-312%);
@@ -396,6 +396,62 @@
     transform: translateY(0%);
   }
 }
+.wrapper {
+  display: flex;
+  height: 2.85rem;
+  text-align: center;
+  justify-content: center;
+  overflow-y: hidden;
+  margin: 4.5rem auto 4.5rem;
+  box-shadow: -10px 10px 10px 1px rgba(2, 2, 2, 0.18);
+  width: 27rem;
+}
+
+.words-left, .words-right {
+  z-index: 1;
+  display: block;
+  width: 9.4rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.words-left {
+  z-index: 1;
+  -webkit-animation: text-scroll-up;
+          animation: text-scroll-up;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: translateY(-500%);
+  font-weight: 600;
+}
+
+.words-right {
+  z-index: 1;
+  -webkit-animation: text-scroll-up-2;
+          animation: text-scroll-up-2;
+  -webkit-animation-duration: 5.12s;
+          animation-duration: 5.12s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: translateY(-500%);
+  font-weight: 600;
+}
+
+.words-middle {
+  z-index: 1;
+  display: block;
+  width: 8rem;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: text-scroll-down;
+          animation: text-scroll-down;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  transform: translateY(400%);
+}
+
 .about-section {
   padding: 11.5rem 2rem;
 }
@@ -527,62 +583,6 @@
           animation-fill-mode: forwards;
   transform: scale(1.24) translateY(0) perspective(150px) translateX(-2rem);
   opacity: 0;
-}
-
-.wrapper {
-  display: flex;
-  height: 3rem;
-  text-align: center;
-  justify-content: center;
-  overflow-y: hidden;
-  margin: 4.5rem auto 4.5rem;
-}
-
-.words-left, .words-right {
-  z-index: 1;
-  display: block;
-  width: 9rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.words-left {
-  z-index: 1;
-  -webkit-animation: text-scroll-up;
-          animation: text-scroll-up;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  transform: translateY(-500%);
-  font-weight: 500;
-}
-
-.words-right {
-  z-index: 1;
-  -webkit-animation: text-scroll-up-2;
-          animation: text-scroll-up-2;
-  -webkit-animation-duration: 5.12s;
-          animation-duration: 5.12s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  transform: translateY(-500%);
-  font-weight: 500;
-}
-
-.words-middle {
-  z-index: 1;
-  display: block;
-  width: 8rem;
-  transition: all 0.5s ease-in-out;
-  -webkit-animation: text-scroll-down;
-          animation: text-scroll-down;
-  -webkit-animation-duration: 4.5s;
-          animation-duration: 4.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  transform: translateY(400%);
-  font-weight: 400;
-  font-size: 2rem;
 }
 
 .big-3-title {
@@ -738,7 +738,7 @@
 #project-container {
   display: grid;
   grid-template-columns: 47vw 47vw;
-  grid-template-rows: 80vh 70vh;
+  grid-template-rows: 130vh 70vh;
   grid-template-areas: "projects projects projects projects" "learning learning learning learning";
 }
 
@@ -828,7 +828,7 @@ html, body, #main-container {
 
 .main-title {
   font-weight: 700 !important;
-  font-size: 4.2rem !important;
+  font-size: 2.85rem !important;
 }
 
 h2 {
@@ -837,7 +837,12 @@ h2 {
 }
 
 span {
-  font-size: 1.85rem;
+  font-size: 1.55rem;
+}
+
+.words-middle {
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 p {
