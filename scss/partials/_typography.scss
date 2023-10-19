@@ -1,12 +1,17 @@
 @use '../partials/variables.scss' as *;
+// style tag for hover animation on h1 tags
+// .style-tag:hover {
+//     transform: ;
+// }
+
 
 .nav-item--list {
     font-weight: 600;
 }
 
 .main-title {
-    font-weight: 700 !important;
-    font-size: 2.85rem !important;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 h2 {

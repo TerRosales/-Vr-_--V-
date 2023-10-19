@@ -2,163 +2,24 @@
 
 
 .about-section {
-    padding: 11.5rem 2rem;
+    padding: 25% 2rem;
+    p{
+        border-width: 0px 0px 2.5px 2.5px;
+        border-style: solid;
+        border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99),
+        rgba(2, 2, 2, 0.60), 
+        rgba(2, 2, 2, 0.45), 
+        rgba(2, 2, 2, 0.15),
+        rgba(2, 2, 2, 0)98%);
+        border-image-slice: 1;
+        box-shadow: -10px 10px 10px 1px rgba(73,252,170, .10);
+        padding: 0.2rem 0.2rem;
+    }
 }
 
-.skills-section {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    overflow-wrap: none;
-    overflow: hidden;
-}
-
-.skills-section-div {
-    white-space: nowrap;
-    overflow-x: scroll;
-    margin: 0rem 0.5rem;
-    height: 38vh;
-    padding: 3rem 0rem;
-    overflow-y: hidden;
-    cursor:default;
-}
-
-::-webkit-scrollbar {
-    width:  0.3rem;
-    height: 0.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(2, 2, 2, 0.02);
-}
-
-::-webkit-scrollbar-track {
-    background:  rgba(255, 255, 255, 0.10);
-}
-
-.skills-h1 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem 0rem;
-}
-
-.skills-list {
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    height: 20vh;
-    align-items: stretch;
-    text-align: start;
-    animation: slide-animation;
-    animation-duration: 32s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-    cursor:default;
-}
-
-.skills-list:hover {
-    animation-play-state: paused;
-}
-
-.skills-list--js {
-    // display: none;
-    transition: all 0.5s ease-in-out;
-}
-
-.skills-list--js:active {
-    display: block;
-}
-
-.skills-list--item {
-    margin: 1.5rem 0.25rem;
-    display: inline-block;
-    margin-right: 5rem;
-    filter: grayscale(100%);
-    transition: all 0.22s ease-in;
-    cursor: default;
-}
-
-.skills-list--item:hover {
-    cursor: pointer;
-    z-index: 3;
-    transform:  scale(1.52) 
-                translateY(-1.12rem)
-                perspective(600px) 
-                rotateX(20deg) 
-                rotateY(20deg);
-    filter: grayscale(0%);
-    transition: all 0.2s ease-in-out;    
-}
-
-
-.skills-list--item:active::before {
-    cursor: default;
-    z-index: 2;
-    color: black;
-    background-image: linear-gradient(to right, green, black , white);
-    content: url('https://img.icons8.com/3d-fluency/94/unicorn.png');
-    font-size: 20px;
-    width: 11rem;
-    height: 5rem;
-    position: absolute;
-    top: 3.7rem;
-    left: 2rem;
-    animation: expand-animation;
-    animation-duration: 1.2s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
-}
-
-.skills-list--item:active::after {
-    cursor: default;
-    background-image: linear-gradient(to right, white, black , green);
-    z-index: 3;
-    content: "Amazing Tool";
-    width: 8rem;
+#main-title {
     height: 4rem;
-    position: absolute;
-    top: 3rem;
-    right: -10rem;
-    animation: expand-animation-2;
-    animation-duration: 1.1s;
-    animation-fill-mode: forwards;
-    transform:  scale(1.24) 
-                translateY(0)
-                perspective(150px)
-                translateX(-2rem);
-    opacity: 0;
+    padding: 1.8rem 0.2rem;
+    text-shadow: -10px 5px 12px rgba(73, 252,170, .15);
 }
-
-// *-------------------------------Save For Later Fade effect for side scroling skills list, this feature currently works on PC but not on the mac
-// .skills-section-div::before {
-//     bottom: 16.5rem;
-//     width: 20rem; height: 38vh;
-//     display: flex;
-//     z-index: 2;
-//     position: absolute;
-//     content: 'hello world';
-//     background-image: linear-gradient(to right, rgba(255, 255, 255, .90), 
-//                                                 rgba(255, 255, 255, .70), 
-//                                                 rgba(255, 255, 255, .60),
-//                                                 rgba(255, 255, 255, .50),
-//                                                 rgba(255, 255, 255, .40));
-// }
-
-// .skills-section-div::after {
-//     left: 36rem;
-//     bottom: 15rem;
-//     width: 20rem; height: 37.5vh;
-//     display: flex;
-//     z-index: 2;
-//     position: relative;
-//     content: 'hello world';
-//     background-image: linear-gradient(to left, rgba(255, 255, 255, .90), 
-//                                                 rgba(255, 255, 255, .70), 
-//                                                 rgba(255, 255, 255, .60),
-//                                                 rgba(255, 255, 255, .50),
-//                                                 rgba(255, 255, 255, .40));
-// }
-
 

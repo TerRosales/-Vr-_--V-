@@ -9,6 +9,62 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+const letters = mainTitle.textContent.split('');
+
+mainTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
+
+const spans = mainTitle.querySelectorAll('span');
+
+spans.forEach(span => {
+span.addEventListener("mouseenter", () => {
+    span.style.color = "rgba(73,241,171, 0.95)"
+    span.style.fontSize = "2.1rem";
+    span.style.paddingRight = "0.2rem"
+    span.classList.add("style-tag"); // Add the class
+});
+
+span.addEventListener("mouseleave", () => {
+    span.style.color = '';
+    span.style.fontSize = '';
+    span.style.paddingRight = '';
+    span.classList.remove("style-tag"); // Remove the class
+});
+});
+//------------------------------------------------------------------------------
+// mainTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
+
+// const spans = mainTitle.querySelectorAll('span');
+
+// spans.forEach(span => {
+//   span.addEventListener("mouseenter", () => {
+//     span.style.transform = `translateY(-0.1rem) scale(2)`;
+//     span.style.color = "red";
+//   });
+
+//   span.addEventListener("mouseleave", () => {
+//     span.style.transform = '';
+//     span.style.color = '';
+//   });
+// });
+//------------------------------------------------------------------------------
+//   const letters = mainTitle.textContent.split('');
+
+//   mainTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
+
+//   const spans = mainTitle.querySelectorAll('span');
+
+//   spans.forEach(span => {
+//     span.addEventListener("mouseenter", () => {
+//       span.style.transform = `translateY(-0.1rem) scale(1.1)`;
+//       span.style.color = "red";
+//     });
+
+//     span.addEventListener("mouseleave", () => {
+//       span.style.transform = '';
+//       span.style.color = '';
+//     });
+//   });
+
 container.addEventListener("mousedown", (e) => {
     isDown = true;
     startX = e.pageX - container.offsetLeft;

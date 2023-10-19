@@ -1,64 +1,15 @@
-@-webkit-keyframes slide-animation {
-  0% {
-    transform: translateX(0rem);
-  }
-  33% {
-    transform: translateX(-120rem);
-  }
-  66% {
-    transform: translateX(1rem);
-  }
-  100% {
-    transform: translateX(-125rem);
-  }
-}
 @keyframes slide-animation {
   0% {
     transform: translateX(0rem);
   }
   33% {
-    transform: translateX(-120rem);
+    transform: translateX(-110rem);
   }
   66% {
-    transform: translateX(1rem);
+    transform: translateX(24rem);
   }
   100% {
-    transform: translateX(-125rem);
-  }
-}
-@-webkit-keyframes blinked {
-  0% {
-    opacity: 1;
-  }
-  15% {
-    opacity: 0.85;
-  }
-  25% {
-    opacity: 0.65;
-  }
-  40% {
-    opacity: 0.3;
-  }
-  45% {
-    opacity: 0.15;
-  }
-  50% {
-    opacity: 0;
-  }
-  55% {
-    opacity: 0.15;
-  }
-  60% {
-    opacity: 0.3;
-  }
-  75% {
-    opacity: 0.65;
-  }
-  85% {
-    opacity: 0.85;
-  }
-  100% {
-    opacity: 1;
+    transform: translateX(-110rem);
   }
 }
 @keyframes blinked {
@@ -96,26 +47,6 @@
     opacity: 1;
   }
 }
-@-webkit-keyframes expand-animation {
-  0% {
-    height: 0.2rem;
-    width: 0.2rem;
-    opacity: 0.8;
-  }
-  50% {
-    width: 11rem;
-    height: 0.2rem;
-  }
-  75% {
-    width: 11rem;
-    height: 3.2rem;
-  }
-  100% {
-    width: 11rem;
-    height: 3.5rem;
-    opacity: 1;
-  }
-}
 @keyframes expand-animation {
   0% {
     height: 0.2rem;
@@ -134,30 +65,6 @@
     width: 11rem;
     height: 3.5rem;
     opacity: 1;
-  }
-}
-@-webkit-keyframes expand-animation-2 {
-  0% {
-    height: 0.2rem;
-    width: 0.2rem;
-    opacity: 0.1;
-  }
-  50% {
-    width: 8rem;
-    height: 0.2rem;
-    opacity: 0.15;
-  }
-  75% {
-    width: 8rem;
-    height: 3.2rem;
-    opacity: 0.25;
-  }
-  100% {
-    width: 8rem;
-    height: 3.5rem;
-    opacity: 1;
-    transform: perspective(600px);
-    background-color: rgba(10, 10, 10, 0.95);
   }
 }
 @keyframes expand-animation-2 {
@@ -182,38 +89,6 @@
     opacity: 1;
     transform: perspective(600px);
     background-color: rgba(10, 10, 10, 0.95);
-  }
-}
-@-webkit-keyframes text-scroll-up {
-  0% {
-    transform: translateY(0%) scale(1.5);
-  }
-  25% {
-    transform: translateY(-112%);
-  }
-  30% {
-    transform: translateY(-100%);
-  }
-  40% {
-    transform: translateY(-212%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  60% {
-    transform: translateY(-312%);
-  }
-  70% {
-    transform: translateY(-300%);
-  }
-  80% {
-    transform: translateY(-412%);
-  }
-  90% {
-    transform: translateY(-400%);
-  }
-  100% {
-    transform: translateY(-400%);
   }
 }
 @keyframes text-scroll-up {
@@ -246,48 +121,6 @@
   }
   100% {
     transform: translateY(-400%);
-  }
-}
-@-webkit-keyframes text-scroll-up-2 {
-  0% {
-    transform: translateY(0%) scale(1.5);
-    color: rgb(255, 50, 250);
-  }
-  25% {
-    transform: translateY(-112%);
-    color: rgb(255, 50, 50);
-  }
-  30% {
-    transform: translateY(-100%);
-    color: rgb(146, 190, 120);
-  }
-  40% {
-    transform: translateY(-212%);
-    color: rgba(12, 255, 174, 0.8);
-  }
-  50% {
-    transform: translateY(-200%);
-    color: rgba(12, 255, 174, 0.8);
-  }
-  60% {
-    transform: translateY(-312%);
-    color: rgba(255, 30, 200, 0.89);
-  }
-  70% {
-    transform: translateY(-300%);
-    color: rgb(10, 80, 200);
-  }
-  80% {
-    transform: translateY(-412%);
-    color: rgb(10, 80, 200);
-  }
-  90% {
-    transform: translateY(-400%);
-    color: rgb(255, 20, 20);
-  }
-  100% {
-    transform: translateY(-400%);
-    color: rgb(255, 20, 20);
   }
 }
 @keyframes text-scroll-up-2 {
@@ -332,38 +165,6 @@
     color: rgb(255, 20, 20);
   }
 }
-@-webkit-keyframes text-scroll-down {
-  0% {
-    transform: translateY(-400%) scale(1.5);
-  }
-  25% {
-    transform: translateY(-388%);
-  }
-  30% {
-    transform: translateY(-288%);
-  }
-  40% {
-    transform: translateY(-300%);
-  }
-  50% {
-    transform: translateY(-188%);
-  }
-  60% {
-    transform: translateY(-200%);
-  }
-  70% {
-    transform: translateY(-88%);
-  }
-  80% {
-    transform: translateY(-100%);
-  }
-  90% {
-    transform: translateY(8%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 @keyframes text-scroll-down {
   0% {
     transform: translateY(-400%) scale(1.5);
@@ -403,7 +204,7 @@
   justify-content: center;
   overflow-y: hidden;
   margin: 4.5rem auto 4.5rem;
-  box-shadow: -10px 10px 10px 1px rgba(73, 242, 170, 0.15);
+  box-shadow: -10px 10px 10px 1px rgba(73, 252, 170, 0.1);
   width: 27rem;
   border-width: 0px 0px 2px 2px;
   border-style: solid;
@@ -422,24 +223,18 @@
 
 .words-left {
   z-index: 1;
-  -webkit-animation: text-scroll-up;
-          animation: text-scroll-up;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: text-scroll-up;
+  animation-duration: 5s;
+  animation-fill-mode: both;
   transform: translateY(-500%);
   font-weight: 600;
 }
 
 .words-right {
   z-index: 1;
-  -webkit-animation: text-scroll-up-2;
-          animation: text-scroll-up-2;
-  -webkit-animation-duration: 5.12s;
-          animation-duration: 5.12s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: text-scroll-up-2;
+  animation-duration: 5.12s;
+  animation-fill-mode: both;
   transform: translateY(-500%);
   font-weight: 600;
 }
@@ -450,146 +245,29 @@
   display: block;
   width: 8rem;
   transition: all 0.5s ease-in-out;
-  -webkit-animation: text-scroll-down;
-          animation: text-scroll-down;
-  -webkit-animation-duration: 4.5s;
-          animation-duration: 4.5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation: text-scroll-down;
+  animation-duration: 4.5s;
+  animation-fill-mode: both;
   transform: translateY(400%);
 }
 
 .about-section {
-  padding: 11.5rem 2rem;
+  padding: 25% 2rem;
+}
+.about-section p {
+  border-width: 0px 0px 2.5px 2.5px;
+  border-style: solid;
+  -o-border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
+     border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
+  border-image-slice: 1;
+  box-shadow: -10px 10px 10px 1px rgba(73, 252, 170, 0.1);
+  padding: 0.2rem 0.2rem;
 }
 
-.skills-section {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
-  overflow-wrap: none;
-  overflow: hidden;
-}
-
-.skills-section-div {
-  white-space: nowrap;
-  overflow-x: scroll;
-  margin: 0rem 0.5rem;
-  height: 38vh;
-  padding: 3rem 0rem;
-  overflow-y: hidden;
-  cursor: default;
-}
-
-::-webkit-scrollbar {
-  width: 0.3rem;
-  height: 0.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(2, 2, 2, 0.02);
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.skills-h1 {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0rem;
-}
-
-.skills-list {
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  height: 20vh;
-  align-items: stretch;
-  text-align: start;
-  -webkit-animation: slide-animation;
-          animation: slide-animation;
-  -webkit-animation-duration: 32s;
-          animation-duration: 32s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  cursor: default;
-}
-
-.skills-list:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-.skills-list--js {
-  transition: all 0.5s ease-in-out;
-}
-
-.skills-list--js:active {
-  display: block;
-}
-
-.skills-list--item {
-  margin: 1.5rem 0.25rem;
-  display: inline-block;
-  margin-right: 5rem;
-  filter: grayscale(100%);
-  transition: all 0.22s ease-in;
-  cursor: default;
-}
-
-.skills-list--item:hover {
-  cursor: pointer;
-  z-index: 3;
-  transform: scale(1.52) translateY(-1.12rem) perspective(600px) rotateX(20deg) rotateY(20deg);
-  filter: grayscale(0%);
-  transition: all 0.2s ease-in-out;
-}
-
-.skills-list--item:active::before {
-  cursor: default;
-  z-index: 2;
-  color: black;
-  background-image: linear-gradient(to right, green, black, white);
-  content: url("https://img.icons8.com/3d-fluency/94/unicorn.png");
-  font-size: 20px;
-  width: 11rem;
-  height: 5rem;
-  position: absolute;
-  top: 3.7rem;
-  left: 2rem;
-  -webkit-animation: expand-animation;
-          animation: expand-animation;
-  -webkit-animation-duration: 1.2s;
-          animation-duration: 1.2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-}
-
-.skills-list--item:active::after {
-  cursor: default;
-  background-image: linear-gradient(to right, white, black, green);
-  z-index: 3;
-  content: "Amazing Tool";
-  width: 8rem;
+#main-title {
   height: 4rem;
-  position: absolute;
-  top: 3rem;
-  right: -10rem;
-  -webkit-animation: expand-animation-2;
-          animation: expand-animation-2;
-  -webkit-animation-duration: 1.1s;
-          animation-duration: 1.1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  transform: scale(1.24) translateY(0) perspective(150px) translateX(-2rem);
-  opacity: 0;
+  padding: 1.8rem 0.2rem;
+  text-shadow: -10px 5px 12px rgba(73, 252, 170, 0.15);
 }
 
 .big-3-title {
@@ -669,7 +347,9 @@
 
 .nav-container {
   background-color: rgba(255, 255, 255, 0.99);
-  width: 100%;
+  width: 95%;
+  height: 5.59rem;
+  padding-top: 1rem;
   position: fixed;
   z-index: 2;
   border-width: 0px 0px 2.5px 2.5px;
@@ -677,8 +357,7 @@
   -o-border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
      border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
   border-image-slice: 1;
-  box-shadow: -10px 10px 10px 1px rgba(73, 242, 170, 0.15);
-  padding: 0.2rem 5% 0.2rem 0rem;
+  box-shadow: -10px 10px 10px 1px rgba(73, 252, 170, 0.1);
 }
 
 .nav-list, .skills-list {
@@ -710,8 +389,121 @@
   top: 0.8rem;
 }
 
-#main-container {
-  padding: 0rem 2rem !important;
+.skills-section {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  overflow-wrap: none;
+  overflow: hidden;
+}
+
+.skills-section-div {
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin: 0rem 0.5rem;
+  height: 38vh;
+  padding: 3rem 0rem;
+  overflow-y: hidden;
+  cursor: default;
+}
+
+::-webkit-scrollbar {
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(2, 2, 2, 0.02);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skills-h1 {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+
+.skills-list {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  height: 20vh;
+  align-items: stretch;
+  text-align: start;
+  animation: slide-animation;
+  animation-duration: 28s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  cursor: default;
+}
+
+.skills-list:hover {
+  animation-play-state: paused;
+}
+
+.skills-list--js {
+  transition: all 0.5s ease-in-out;
+}
+
+.skills-list--js:active {
+  display: block;
+}
+
+.skills-list--item {
+  margin: 1.5rem 0.25rem;
+  display: inline-block;
+  margin-right: 5rem;
+  filter: grayscale(98%);
+  transition: all 0.22s ease-in;
+  cursor: default;
+}
+
+.skills-list--item:hover {
+  cursor: pointer;
+  z-index: 3;
+  transform: scale(1.52) translateY(-1.12rem) perspective(600px) rotateX(20deg) rotateY(20deg);
+  filter: grayscale(0%);
+  transition: all 0.2s ease-in-out;
+}
+
+.skills-list--item:active::before {
+  cursor: default;
+  z-index: 2;
+  color: black;
+  background-image: linear-gradient(to right, green, black, white);
+  content: url("https://img.icons8.com/3d-fluency/94/unicorn.png");
+  font-size: 20px;
+  width: 11rem;
+  height: 5rem;
+  position: absolute;
+  top: 3.7rem;
+  left: 2rem;
+  animation: expand-animation;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.skills-list--item:active::after {
+  cursor: default;
+  background-image: linear-gradient(to right, white, black, green);
+  z-index: 3;
+  content: "Amazing Tool";
+  width: 8rem;
+  height: 4rem;
+  position: absolute;
+  top: 3rem;
+  right: -10rem;
+  animation: expand-animation-2;
+  animation-duration: 1.1s;
+  animation-fill-mode: forwards;
+  transform: scale(1.24) translateY(0) perspective(150px) translateX(-2rem);
+  opacity: 0;
 }
 
 .container-fluid {
@@ -730,6 +522,7 @@
 
 #navbar {
   grid-area: nav;
+  --bs-navbar-padding-y: 0;
 }
 
 #about-container {
@@ -785,7 +578,6 @@
   flex-direction: column;
   z-index: 1;
   overflow-y: scroll;
-  transition: all 5s ease-in-out;
 }
 
 #footer-div {
@@ -840,8 +632,8 @@ html, body, #main-container {
 }
 
 .main-title {
-  font-weight: 700 !important;
-  font-size: 2.85rem !important;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
 h2 {
@@ -868,4 +660,8 @@ p {
 
 .skills-list--item:hover {
   text-shadow: -12px 20px 13px rgba(2, 2, 2, 0.15);
+}
+
+#main-container {
+  padding: 0rem 2rem !important;
 }/*# sourceMappingURL=main.css.map */

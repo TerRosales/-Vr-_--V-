@@ -1,13 +1,11 @@
 @use '../partials/variables.scss' as *;
 
 // Navbar Width To Allow Correct Menu Aligntment
-.navbar {
-    
-}
-
 .nav-container {
     background-color: rgba(255, 255, 255, 0.99);
-    width: 100%;
+    width: 95%;
+    height: 5.59rem;
+    padding-top: 1rem;
     position: fixed;
     z-index: 2;
     border-width: 0px 0px 2.5px 2.5px;
@@ -18,8 +16,7 @@
     rgba(2, 2, 2, 0.15),
     rgba(2, 2, 2, 0)98%);
     border-image-slice: 1;
-    box-shadow: -10px 10px 10px 1px rgba(73,242,170, .15);
-    padding: 0.2rem 5% 0.2rem 0rem;
+    box-shadow: -10px 10px 10px 1px rgba(73,252,170, .10);
 }
 
 .nav-list, .skills-list {
