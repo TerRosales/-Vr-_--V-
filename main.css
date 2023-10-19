@@ -204,9 +204,9 @@
   justify-content: center;
   overflow-y: hidden;
   margin: 4.5rem auto 4.5rem;
-  box-shadow: -10px 10px 10px 1px rgba(73, 252, 170, 0.1);
+  box-shadow: -10px 10px 10px 1px rgba(10, 100, 10, 0.075);
   width: 27rem;
-  border-width: 0px 0px 2px 2px;
+  border-width: 0px 2.5px 2.5px 2.5px;
   border-style: solid;
   -o-border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
      border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
@@ -260,7 +260,7 @@
   -o-border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
      border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
   border-image-slice: 1;
-  box-shadow: -10px 10px 10px 1px rgba(73, 252, 170, 0.1);
+  box-shadow: -10px 10px 10px 1px rgba(10, 100, 10, 0.075);
   padding: 0.2rem 0.2rem;
 }
 
@@ -357,7 +357,7 @@
   -o-border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
      border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99), rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.45), rgba(2, 2, 2, 0.15), rgba(2, 2, 2, 0) 98%);
   border-image-slice: 1;
-  box-shadow: -10px 10px 10px 1px rgba(73, 252, 170, 0.1);
+  box-shadow: -10px 10px 10px 1px rgba(10, 70, 10, 0.075);
 }
 
 .nav-list, .skills-list {
