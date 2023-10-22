@@ -12,11 +12,20 @@
 .main-title {
     font-weight: 700;
     font-size: 2rem;
+    color: rgba(10,20,10, .9);
 }
 
-h2 {
+.job-title {
     font-weight: 700;
-    font-size: 1.55rem;
+    font-size: 1.75rem;
+    color: rgba(73,241,171, .9);
+    animation: text-pop;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+span {
+    padding-left: 0.1rem;
 }
 
 .words-middle {

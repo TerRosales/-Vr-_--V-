@@ -2,7 +2,7 @@
 
 
 .about-section {
-    padding: 25% 2rem;
+    padding: 25% 10%;
     p{
         border-width: 0px 0px 2.5px 2.5px;
         border-style: solid;
@@ -17,9 +17,8 @@
     }
 }
 
-#main-title {
-    height: 4rem;
-    padding: 1.8rem 0.2rem;
-    text-shadow: -10px 5px 12px rgba(73, 252,170, .15);
-}
 
+#main-title {
+    z-index: 2;
+    text-shadow: -10px 5px 12px rgba(73, 252,170, .25);
+}

@@ -9,7 +9,7 @@
     "about about about about"
     "about about about about";
 }
-
+// About Grid Set Up
 .about-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -22,7 +22,7 @@
     grid-area: nav;
     --bs-navbar-padding-y: 0;
 }
-// About Me Section Set Up
+
 #about-container {
     grid-area: about;
 }
@@ -34,6 +34,8 @@
 #skills-section {
     grid-area: skills;
 }
+
+
 // Project Section Set Up
 #project-container {
     display: grid;
@@ -64,15 +66,6 @@
     z-index: 2;
 }
 
-// .hidden {
-//     grid-area: details;
-//     width: 38rem; height: 65%;
-//     position: relative;
-//     top: 7%;
-//     right: 20%;
-//     z-index: 2;
-//     display: none;
-// }
 
 #learning-section {
     background-color: rgba(64, 54, 90, 0.30);
@@ -81,15 +74,13 @@
 }
 
 #project-section {
-    background-color: rgba(200, 54, 90, 0.30);
     grid-area: projects;
-    // grid-template-columns: 1fr 1fr 1fr;
     flex-direction: column;
     z-index: 1;
     overflow-y: scroll;
 }
 
-
+// Footer Set up
 #footer-div {
     padding: 2rem;
     display: grid;

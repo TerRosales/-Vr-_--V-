@@ -1,7 +1,7 @@
 const container = document.querySelector(".skills-section-div");
 const containerLearning = document.getElementById('learning-section');
 
-const mainTitle = document.getElementById('main-title');
+const mainTitle = document.querySelector('#main-title');
 
 
 let isDragging = false;
@@ -19,7 +19,7 @@ spans.forEach(span => {
 span.addEventListener("mouseenter", () => {
     span.style.color = "rgba(73,241,171, 0.95)"
     span.style.fontSize = "2.1rem";
-    span.style.paddingRight = "0.2rem"
+    span.style.paddingRight = "1rem"
     span.classList.add("style-tag"); // Add the class
 });
 
@@ -107,4 +107,3 @@ containerLearning.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 0.8; // Adjust the factor to control scrolling speed
     containerLearning.scrollLeft = scrollLeft - walk;
 });
-
