@@ -5,10 +5,13 @@
 }
 
 .project-container {
+    border-image: url('/assets/svg-border.svg');
+    background-color: white;
 }
 
 .project-section {
     background-color: pink;
+    padding: 2.5rem 1rem;
 }
 
 .project-card {

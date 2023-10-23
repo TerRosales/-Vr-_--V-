@@ -283,8 +283,15 @@
   position: absolute;
 }
 
+.project-container {
+  -o-border-image: url("/assets/svg-border.svg");
+     border-image: url("/assets/svg-border.svg");
+  background-color: white;
+}
+
 .project-section {
   background-color: pink;
+  padding: 2.5rem 1rem;
 }
 
 .project-card {
@@ -631,7 +638,7 @@ body a {
   color: inherit;
 }
 
-html, body, #main-container {
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -695,4 +702,9 @@ p {
 
 #main-container {
   padding: 0rem 1rem 0rem 0rem;
+  overflow-x: hidden;
+}
+
+.navbar {
+  transform: translateX(-1rem);
 }/*# sourceMappingURL=main.css.map */
