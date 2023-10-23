@@ -1,23 +1,49 @@
 @use '../partials/variables.scss' as *;
 
-.big-3-title {
+.project-intro{
     position: absolute;
+    color: white;
+    z-index: 2;
+    text-shadow:-1rem -1.2rem 0px rgba(73,241,171, 1);
+    transform: translateX(20rem);
+    h3 {
+        font-size: 3.5rem;
+    }
 }
-
 .project-container {
-    border-image: url('/assets/svg-border.svg');
-    background-color: white;
+    background-color: purple;
 }
 
 .project-section {
-    background-color: pink;
+    background-image: linear-gradient(120deg, black 60%, white 40%);
+    padding: 2.5rem 1rem;
+    overflow-x: hidden;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.project-cards--container {
     padding: 2.5rem 1rem;
 }
 
 .project-card {
     background-color: rgba(228, 0, 228, 0.12);
-    margin: 2rem 1rem;
+    margin: 4.2rem 1rem 3.5rem 1rem;
     padding: 1.2rem 1.4rem;
+}
+
+.project-card--details {
+    width: 38rem; height: 40%;
+    position: sticky;
+    top: 7%;
+    right: 10%;
+    z-index: 2;
+}
+
+// puts cards towards to left 
+.move-to-left {
+    opacity: 0.1;
+    transform: translateX(-300px);
 }
 
 .learning-list--title {
@@ -33,6 +59,7 @@
     overflow-y: hidden;
     overflow-x: auto;
     text-align: center;
+    margin-top: 5rem
 }
 
 .learning-list {

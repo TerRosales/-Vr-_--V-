@@ -9,3 +9,9 @@
 .navbar {
     transform: translateX(-1rem);
 }
+
+.animate {
+    transform: translateX(5rem);
+    opacity: 1;
+    transition: ease-out 1s;
+}

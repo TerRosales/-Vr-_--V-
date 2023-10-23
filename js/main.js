@@ -8,63 +8,7 @@ let isDragging = false;
 let isDown = false;
 let startX;
 let scrollLeft;
-
-const letters = mainTitle.textContent.split('');
-
-mainTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
-
-const spans = mainTitle.querySelectorAll('span');
-
-spans.forEach(span => {
-span.addEventListener("mouseenter", () => {
-    span.style.color = "rgba(73,241,171, 0.95)"
-    span.style.fontSize = "2.1rem";
-    span.style.paddingRight = "1rem"
-    span.classList.add("style-tag"); // Add the class
-});
-
-span.addEventListener("mouseleave", () => {
-    span.style.color = '';
-    span.style.fontSize = '';
-    span.style.paddingRight = '';
-    span.classList.remove("style-tag"); // Remove the class
-});
-});
-//------------------------------------------------------------------------------
-// mainTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
-
-// const spans = mainTitle.querySelectorAll('span');
-
-// spans.forEach(span => {
-//   span.addEventListener("mouseenter", () => {
-//     span.style.transform = `translateY(-0.1rem) scale(2)`;
-//     span.style.color = "red";
-//   });
-
-//   span.addEventListener("mouseleave", () => {
-//     span.style.transform = '';
-//     span.style.color = '';
-//   });
-// });
-//------------------------------------------------------------------------------
-//   const letters = mainTitle.textContent.split('');
-
-//   mainTitle.innerHTML = letters.map(letter => `<span>${letter}</span>`).join('');
-
-//   const spans = mainTitle.querySelectorAll('span');
-
-//   spans.forEach(span => {
-//     span.addEventListener("mouseenter", () => {
-//       span.style.transform = `translateY(-0.1rem) scale(1.1)`;
-//       span.style.color = "red";
-//     });
-
-//     span.addEventListener("mouseleave", () => {
-//       span.style.transform = '';
-//       span.style.color = '';
-//     });
-//   });
-
+// handles events for moving the scrollable elements
 container.addEventListener("mousedown", (e) => {
     isDown = true;
     startX = e.pageX - container.offsetLeft;
@@ -107,3 +51,35 @@ containerLearning.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 0.8; // Adjust the factor to control scrolling speed
     containerLearning.scrollLeft = scrollLeft - walk;
 });
+// scrollable elements handles ends here
+
+const containers = document.querySelectorAll('.observable');
+
+function handleIntersection(entries, observer) {
+entries.forEach(entry => {
+
+        console.log(entries);
+    
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('move-to-left');
+            entry.target.classList.add('animate');
+        } else if (entry.target.classList.contains('project-card')) {
+            entry.target.classList.remove('animate');
+            entry.target.classList.add('move-to-left');
+        } else if (entry.target.classList.contains('project-intro')) {
+            entry.target.classList.remove('animate');
+        }
+
+});
+};
+
+observer = new IntersectionObserver(handleIntersection, {
+    root: null,
+    rootMargin: "1px",
+    threshold: 0.1
+})
+
+containers.forEach(containers => {
+    observer.observe(containers)
+})
+

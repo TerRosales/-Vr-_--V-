@@ -14,8 +14,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 85vh;
-    grid-template-areas: "aboutMe skills skills"
-    "aboutMe skills skills";
+    grid-template-areas: "aboutMe skills"
+    "aboutMe skills";
 }
 
 #navbar {
@@ -40,7 +40,7 @@
 #project-container {
     display: grid;
     grid-template-columns:50vw 50vw;
-    grid-template-rows: 100vh 70vh;
+    grid-template-rows: 120vh 70vh;
     grid-template-areas: "projects projects projects projects"
     "learning learning learning learning";
 }
@@ -51,6 +51,7 @@
     grid-template-rows: 1fr;
     grid-template-areas: "cards details";
     overflow-x: hidden;
+    grid-area: projects;
 }
 
 .project-card--container {
@@ -59,25 +60,12 @@
 
 .project-card--details {
     grid-area: details;
-    width: 38rem; height: 65%;
-    position: relative;
-    top: 7%;
-    right: 20%;
-    z-index: 2;
 }
-
 
 #learning-section {
     background-color: rgba(64, 54, 90, 0.30);
     grid-area: learning;
     margin-top: 5rem
-}
-
-#project-section {
-    grid-area: projects;
-    flex-direction: column;
-    z-index: 1;
-    overflow-y: scroll;
 }
 
 // Footer Set up
