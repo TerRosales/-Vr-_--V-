@@ -6,7 +6,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 6%;
     overflow-wrap: none;
     overflow: hidden;
 }
@@ -15,8 +15,8 @@
     white-space: nowrap;
     overflow-x: scroll;
     margin: 0rem 2rem;
-    height: 38vh;
-    padding: 3rem 0rem;
+    height: 38vh; width: 80%;
+    padding: 3rem 3rem;
     overflow-y: hidden;
     cursor:default;
 }
