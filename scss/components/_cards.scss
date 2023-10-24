@@ -5,7 +5,13 @@
 }
 
 .project-card--details {
-    background-color: rgb(127, 255, 212);
+    border-right: 2.5px outset rgba(255, 255, 255, 0.7);
+    border-top: 2.5px outset rgba(255, 255, 255, 0.7);
+    background-image: url(https://source.unsplash.com/random
+
+    );
+    opacity: 0.9;
+    box-shadow: 10px 10px 10px rgba(127, 255, 212, 1);
 }
 
 .project-card{
