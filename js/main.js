@@ -124,24 +124,9 @@ const knowMoreButton = document.querySelector(".project-card--button-1");
 const knowMoreButton2 = document.querySelector(".project-card--button-1");
 const knowMoreButton3 = document.querySelector(".project-card--button-1");
 
-function clearProjectCardDetails() {
-    // Get the project-card-details element
-    const projectCardDetails = document.querySelectorAll(".project-card--details");
-
-    // Check if the link button already exists and remove it
-    const linkButton = projectCardDetails.querySelector("#link-button");
-    if (linkButton) {
-        projectCardDetails.removeChild(linkButton);
-    }
-
-    // Clear any other content in project-card-details
-    projectCardDetails.innerHTML = "";
-}
 
 // Add a click event listener to the "Know More" button
 knowMoreButton.addEventListener("click", () => {
-    // Clear existing content
-    clearProjectCardDetails();
     // Change background, h4 text, and p text
     projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
     projectCardDetails.style.backgroundSize = "cover";
@@ -167,8 +152,6 @@ knowMoreButton.addEventListener("click", () => {
 });
 
 knowMoreButton2.addEventListener("click", () => {
-    // Clear existing content
-    clearProjectCardDetails();
     // Change background, h4 text, and p text
     projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
     projectCardDetails.style.backgroundSize = "cover";
@@ -194,8 +177,6 @@ knowMoreButton2.addEventListener("click", () => {
 });
 
 knowMoreButton3.addEventListener("click", () => {
-    // Clear existing content
-    clearProjectCardDetails();
     // Change background, h4 text, and p text
     projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
     projectCardDetails.style.backgroundSize = "cover";
