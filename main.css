@@ -354,7 +354,6 @@
   border-top: 2.5px outset rgba(255, 255, 255, 0.7);
   background-image: url(https://source.unsplash.com/random);
   opacity: 0.9;
-  box-shadow: 10px 10px 10px rgb(127, 255, 212);
 }
 
 .project-card {
