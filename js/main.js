@@ -83,3 +83,20 @@ containers.forEach(containers => {
     observer.observe(containers)
 })
 
+
+// Vanilla tilt Uses
+const tiltElement = document.querySelectorAll('.project-card--details');
+
+VanillaTilt.init(tiltElement);
+
+
+VanillaTilt.init(tiltElement, {
+    max: 25,  // Maximum tilt rotation (in degrees)
+    speed: 500, // Tilt speed
+    glare: true, // Enable glare effect
+    "max-glare": 0.3, // Max glare opacity
+});
+
+
+
+

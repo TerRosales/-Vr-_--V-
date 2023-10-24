@@ -5,18 +5,113 @@
 }
 
 .project-card--details {
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 212);
 }
 
 .project-card{
+    color: white;
     width: 18rem; height: 25rem;
+    padding: 1.2rem 1.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.4rem;
+    border-left: 1.5px outset rgba(255, 255, 255, 0.7);
+    border-top: 1.5px outset rgba(255, 255, 255, 0.7);
+    text-align: start;
+    overflow: hidden;
+    h4 {
+        transform: translateY(9rem);
+        font-size: 2rem;
+        transition:all 500ms ease-in-out;
+    }
+    p {
+        transform: translateY(20rem);
+        opacity: 0;
+        transition:all 500ms ease-in-out;
+    }
+    button {
+        transform: translateY(13rem);
+        opacity: 0;
+        transition:all 500ms ease-in-out;
+    }
+}
+
+.project-card:hover{
+    transform: translateX(10rem) !important;
+    h4 {
+        transform: translateY(0rem);
+        font-size: 1.7rem;
+    }
+    .first {
+        color: rgba(116,49,255, 0.8);
+    }
+    .second {
+        color: rgba(250, 250, 40, 0.9);
+    }
+    .third {
+        color: rgb(127, 255, 120);
+    }
+    
+    p {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    button {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.card-one:hover {
+    h4 {
+        font-weight: 600;
+    }
+    background-image: url('/assets/math-cut.png');
+    background-size: cover;
+    background-position: 15rem;
+    background-repeat: no-repeat;
+    background-color: rgba(116,49,255, 0.2);
+}
+
+.card-two:hover {
+    h4 {
+        font-weight: 600;
+    }
+    background-image: url('/assets/zero-cut.png');
+    background-size: cover;
+    background-position: 15rem;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card-three:hover {
+    h4 {
+        font-weight: 600;
+    }
+    background-image: url('/assets/quiz-cut.png');
+    background-size: cover;
+    background-position: 15rem;
+    background-repeat: no-repeat;
+    background-color: rgba(127, 255, 120, 0.4);
 }
 
 .project-card--title{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-card--text{
+    margin-bottom: 1.5rem;
+}
+
+.project-card--button{
+    margin: 1rem 25%;
+}
+
+.project-card--button:hover{
 
 }
 
-.project-card-text{
+.project-card--button:active{
 
 }
 
