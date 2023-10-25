@@ -24,18 +24,51 @@
 
 .project-cards--container {
     padding: 2.5rem 1rem 10rem 1rem;
+
 }
 
 .project-card {
     margin: 6rem 1rem 3.5rem 12%;
 }
 
+#link-button {
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-image: linear-gradient(120deg,rgba(180, 255, 224, 0.5),rgba(73,241,171, 1),rgba(180,255,224, 0.5));
+    width: 6rem;
+    height: 3rem;
+    border-width: 0px 0px 2.5px 2.5px;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgba(2, 2, 2, 0.99),
+    rgba(2, 2, 2, 0.60), 
+    rgba(2, 2, 2, 0.45), 
+    rgba(2, 2, 2, 0.15),
+    rgba(2, 2, 2, 0)98%);
+    border-image-slice: 1;
+    box-shadow: -10px 10px 10px 1px rgba(10, 70, 10, .075);
+    transition: all 300ms ease-in-out;
+}
+
+#link-button:hover {
+    background-color: rgba(73,241,171, 1);
+    width: 6rem;
+    height: 3rem;
+    border: 0.2rem outset rgba(2, 2, 2, .75);
+    box-shadow: -10px 10px 10px 1px rgba(10, 10, 10, .22);
+    transform: perspective(500px)
+                scale(1.22)
+                translateY(-5px);
+}
+
 .project-card--details {
-    width: 38rem; height: 40%;
+    width: 38rem; height: 64vh;
     position: sticky;
+    display: flex;
+    flex-direction: column;
     top: 15%;
     right: 15%;
     z-index: 2;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 // puts cards towards to left 

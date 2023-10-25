@@ -106,98 +106,302 @@ VanillaTilt.init(element, {
 });
 });
 
-// const knowMoreButton = document.querySelector(".project-card--button-1");
+
 // const projectCardDetails = document.querySelector(".project-card--details");
 
-// // Add a click event listener to the button
-// knowMoreButton.addEventListener("click", () => {
+// const knowMoreButton1 = document.querySelector(".project-card--button-1");
+// const knowMoreButton2 = document.querySelector(".project-card--button-2");
+// const knowMoreButton3 = document.querySelector(".project-card--button-3");
+
+
+// let linkButton = null; // Initialize the link button variable
+// let videoElement = null; // Initialize a variable to store the video element
+
+// function createLinkButton(buttonNumber, url) {
+//     linkButton = document.createElement("button");
+//     linkButton.textContent = buttonNumber;
+//     linkButton.id = `link-button-${buttonNumber}`;
+    
+//     linkButton.addEventListener("click", () => {
+//         window.open(url, "_blank");
+//     });
+    
+//     projectCardDetails.appendChild(linkButton);
+// }
+// function createLinkButton2(buttonNumber, url) {
+//     linkButton = document.createElement("button");
+//     linkButton.textContent = buttonNumber;
+//     linkButton.id = `link-button-${buttonNumber}`;
+    
+//     linkButton.addEventListener("click", () => {
+//         window.open(url, "_blank");
+//     });
+    
+//     projectCardDetails.appendChild(linkButton);
+// }
+
+// knowMoreButton1.addEventListener("click", () => {
 //     // Change background, h4 text, and p text
-//     projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
+//     projectCardDetails.style.backgroundImage = "url('/assets/math-me-up.png')";
 //     projectCardDetails.style.backgroundSize = "cover";
-//     projectCardDetails.querySelector("h4").textContent = "Project 11";
-//     projectCardDetails.querySelector("p").textContent = "GitPages";
+//     projectCardDetails.style.backgroundPosition = "center";
+//     projectCardDetails.querySelector("h4").textContent = "New Title 1";
+//     projectCardDetails.querySelector("p").textContent = "New text goes here 1.";
+    
+//     // Remove the previous link button if it exists
+//     if (linkButton) {
+//         projectCardDetails.removeChild(linkButton);
+//     }
+
+//     if (videoElement) {
+//         projectCardDetails.removeChild(videoElement);
+//     }
+
+    
+//     createLinkButton(1, "https://terrosales.github.io/project-XI/");
 // });
 
+// knowMoreButton2.addEventListener("click", () => {
+//     // Change background, h4 text, and p text
+//     projectCardDetails.style.backgroundImage = "url('/assets/project-0-zero.png')";
+//     projectCardDetails.style.backgroundSize = "cover";
+//     projectCardDetails.querySelector("h4").textContent = "New Title 2";
+//     projectCardDetails.querySelector("p").textContent = "New text goes here 2.";
+    
+//     // Remove the previous link button if it exists
+//     if (linkButton) {
+//         projectCardDetails.removeChild(linkButton);
+//     }
+    
+//     if (videoElement) {
+//         projectCardDetails.removeChild(videoElement);
+//     }
+
+
+//     createLinkButton(2, "https://terrosales.github.io/project-0-Zero/");
+// });
+
+// knowMoreButton3.addEventListener("click", () => {
+//     // Change background, h4 text, and p text
+    
+//     projectCardDetails.style.backgroundImage = "linear-gradient(120deg, rgba(127, 255, 120, 1), rgba(0, 20, 0, 0.6)";
+//     projectCardDetails.style.backgroundSize = "cover";
+//     projectCardDetails.querySelector("h4").textContent = "New Title 3";
+//     projectCardDetails.querySelector("p").textContent = "New text goes here 3.";
+    
+//     // Remove the previous link button if it exists
+//     if (linkButton) {
+//         projectCardDetails.removeChild(linkButton);
+//     }
+
+//     createLinkButton2(3, "https://terrosales.github.io/project-twelve/");
+//     const videoElement = document.createElement('video');
+//     videoElement.id = 'hoverVideo'; // Set an ID for the video element
+//     videoElement.autoplay = true;
+//     videoElement.muted = true;
+//     videoElement.width = 540;
+//     videoElement.height = 400;
+//     const sourceElement = document.createElement('source');
+//     sourceElement.src = '/assets/quiz-time-vid.mp4'; // Replace with your video URL
+//     sourceElement.type = 'video/mp4';
+//     videoElement.appendChild(sourceElement);
+//     projectCardDetails.appendChild(videoElement);
+// });
+
+
+
+
+// const projectCardDetails = document.querySelector(".project-card--details");
+// const knowMoreButton1 = document.querySelector(".project-card--button-1");
+// const knowMoreButton2 = document.querySelector(".project-card--button-2");
+// const knowMoreButton3 = document.querySelector(".project-card--button-3");
+
+// let linkButton = null; // Initialize the link button variable
+// let videoElement = null; // Initialize the video element variable
+
+// function createLinkButton(buttonNumber, url) {
+//     linkButton = document.createElement("button");
+//     linkButton.textContent = buttonNumber;
+//     linkButton.id = `link-button-${buttonNumber}`;
+
+//     linkButton.addEventListener("click", () => {
+//         window.open(url, "_blank");
+//     });
+
+//     projectCardDetails.appendChild(linkButton);
+// }
+
+// knowMoreButton1.addEventListener("click", () => {
+//     // Change background, h4 text, and p text
+//     projectCardDetails.style.backgroundImage = "url('/assets/math-me-up.png')";
+//     projectCardDetails.style.backgroundSize = "cover";
+//     projectCardDetails.style.backgroundPosition = "center";
+//     projectCardDetails.querySelector("h4").textContent = "New Title 1";
+//     projectCardDetails.querySelector("p").textContent = "New text goes here 1.";
+
+//     // Remove the previous link button if it exists
+//     if (linkButton) {
+//         projectCardDetails.removeChild(linkButton);
+//     }
+
+//     // Check if the video element is a child of projectCardDetails before removing it
+//     if (videoElement && videoElement.parentElement === projectCardDetails) {
+//         projectCardDetails.removeChild(videoElement);
+//     }
+
+//     createLinkButton(1, "https://terrosales.github.io/project-XI/");
+// });
+
+// knowMoreButton2.addEventListener("click", () => {
+//     // Change background, h4 text, and p text
+//     projectCardDetails.style.backgroundImage = "url('/assets/project-0-zero.png')";
+//     projectCardDetails.style.backgroundSize = "cover";
+//     projectCardDetails.querySelector("h4").textContent = "New Title 2";
+//     projectCardDetails.querySelector("p").textContent = "New text goes here 2.";
+
+//     // Remove the previous link button if it exists
+//     if (linkButton) {
+//         projectCardDetails.removeChild(linkButton);
+//     }
+
+//     // Check if the video element is a child of projectCardDetails before removing it
+//     if (videoElement && videoElement.parentElement === projectCardDetails) {
+//         projectCardDetails.removeChild(videoElement);
+//     }
+
+//     createLinkButton(2, "https://terrosales.github.io/project-0-Zero/");
+// });
+
+// knowMoreButton3.addEventListener("click", () => {
+//     // Change background, h4 text, and p text
+
+//     projectCardDetails.style.backgroundImage = "linear-gradient(120deg, rgba(127, 255, 120, 1), rgba(0, 20, 0, 0.6)";
+//     projectCardDetails.style.backgroundSize = "cover";
+//     projectCardDetails.querySelector("h4").textContent = "New Title 3";
+//     projectCardDetails.querySelector("p").textContent = "New text goes here 3.";
+
+//     // Remove the previous link button if it exists
+//     if (linkButton) {
+//         projectCardDetails.removeChild(linkButton);
+//     }
+
+//     // Check if the video element is a child of projectCardDetails before removing it
+//     if (videoElement && videoElement.parentElement === projectCardDetails) {
+//         projectCardDetails.removeChild(videoElement);
+//     }
+
+//     // Create and add the video element
+//     videoElement = document.createElement('video');
+//     videoElement.id = 'hoverVideo'; // Set an ID for the video element
+//     videoElement.autoplay = true;
+//     videoElement.muted = true;
+//     videoElement.width = 540;
+//     videoElement.height = 400;
+//     const sourceElement = document.createElement('source');
+//     sourceElement.src = '/assets/quiz-time-vid.mp4'; // Replace with your video URL
+//     sourceElement.type = 'video/mp4';
+//     videoElement.appendChild(sourceElement);
+//     projectCardDetails.appendChild(videoElement);
+// });
+
+
+// ///////////////////////////////////////////////////////////////////////////
+
+
+
 const projectCardDetails = document.querySelector(".project-card--details");
+const knowMoreButton1 = document.querySelector(".project-card--button-1");
+const knowMoreButton2 = document.querySelector(".project-card--button-2");
+const knowMoreButton3 = document.querySelector(".project-card--button-3");
 
-const knowMoreButton = document.querySelector(".project-card--button-1");
-const knowMoreButton2 = document.querySelector(".project-card--button-1");
-const knowMoreButton3 = document.querySelector(".project-card--button-1");
+let linkButton = null; // Initialize the link button variable
+let videoElement = null; // Initialize the video element variable
 
+function createLinkButton(buttonLink, url) {
+    linkButton = document.createElement("button");
+    linkButton.textContent = buttonLink;
+    linkButton.id = `link-button`;
 
-// Add a click event listener to the "Know More" button
-knowMoreButton.addEventListener("click", () => {
+    linkButton.addEventListener("click", () => {
+        window.open(url, "_blank");
+    });
+
+    projectCardDetails.appendChild(linkButton);
+}
+
+knowMoreButton1.addEventListener("click", () => {
     // Change background, h4 text, and p text
-    projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
+    projectCardDetails.style.backgroundImage = "url('/assets/math-me-up.png')";
     projectCardDetails.style.backgroundSize = "cover";
-    projectCardDetails.querySelector("h4").textContent = "New Title";
-    projectCardDetails.querySelector("p").textContent = "New text goes here.";
-    
-    // Check if the link button already exists
-    let linkButton = projectCardDetails.querySelector("#link-button");
-    
-    if (!linkButton) {
-        // If it doesn't exist, create and append the link button
-        linkButton = document.createElement("button");
-        linkButton.textContent = "Visit Page";
-        linkButton.id = "link-button"; // Set an ID for the button
-        projectCardDetails.appendChild(linkButton);
-        
-        // Add a click event listener to the link button
-        linkButton.addEventListener("click", () => {
-            // Redirect to the desired page when the link button is clicked
-            window.location.href = "your-target-page.html";
-        });
+    projectCardDetails.style.backgroundPosition = "top center";
+    projectCardDetails.querySelector("h4").textContent = "New Title 1";
+    projectCardDetails.querySelector("p").textContent = "New text goes here 1.";
+
+    // Remove the previous link button if it exists
+    if (linkButton) {
+        projectCardDetails.removeChild(linkButton);
     }
+
+    // Check if the video element is a child of projectCardDetails before removing it
+    if (videoElement && videoElement.parentElement === projectCardDetails) {
+        projectCardDetails.removeChild(videoElement);
+    }
+
+    createLinkButton("Visit", "https://terrosales.github.io/project-XI/");
 });
 
 knowMoreButton2.addEventListener("click", () => {
     // Change background, h4 text, and p text
-    projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
+    projectCardDetails.style.backgroundImage = "url('/assets/project-0-zero.png')";
     projectCardDetails.style.backgroundSize = "cover";
-    projectCardDetails.querySelector("h4").textContent = "New Title";
-    projectCardDetails.querySelector("p").textContent = "New text goes here.";
-    
-    // Check if the link button already exists
-    let linkButton = projectCardDetails.querySelector("#link-button");
-    
-    if (!linkButton) {
-        // If it doesn't exist, create and append the link button
-        linkButton = document.createElement("button");
-        linkButton.textContent = "2";
-        linkButton.id = "link-button"; // Set an ID for the button
-        projectCardDetails.appendChild(linkButton);
-        
-        // Add a click event listener to the link button
-        linkButton.addEventListener("click", () => {
-            // Redirect to the desired page when the link button is clicked
-            window.location.href = "your-target-page.html";
-        });
+    projectCardDetails.querySelector("h4").textContent = "New Title 2";
+    projectCardDetails.querySelector("p").textContent = "New text goes here 2.";
+
+    // Remove the previous link button if it exists
+    if (linkButton) {
+        projectCardDetails.removeChild(linkButton);
     }
+
+    // Check if the video element is a child of projectCardDetails before removing it
+    if (videoElement && videoElement.parentElement === projectCardDetails) {
+        projectCardDetails.removeChild(videoElement);
+    }
+
+    createLinkButton("Visit", "https://terrosales.github.io/Project-0-Zero/");
 });
 
 knowMoreButton3.addEventListener("click", () => {
     // Change background, h4 text, and p text
-    projectCardDetails.style.backgroundImage = "url('your-new-image-url.jpg')";
+    projectCardDetails.style.backgroundImage = "linear-gradient(120deg, rgba(127, 255, 120, 1), rgba(0, 20, 0, 0.6)";
     projectCardDetails.style.backgroundSize = "cover";
-    projectCardDetails.querySelector("h4").textContent = "New Title";
-    projectCardDetails.querySelector("p").textContent = "New text goes here.";
-    
-    // Check if the link button already exists
-    let linkButton = projectCardDetails.querySelector("#link-button");
-    
-    if (!linkButton) {
-        // If it doesn't exist, create and append the link button
-        linkButton = document.createElement("button");
-        linkButton.textContent = "3";
-        linkButton.id = "link-button"; // Set an ID for the button
-        projectCardDetails.appendChild(linkButton);
-        
-        // Add a click event listener to the link button
-        linkButton.addEventListener("click", () => {
-            // Redirect to the desired page when the link button is clicked
-            window.open("https://terrosales.github.io/project-twelve/", "_blank");
-        });
+    projectCardDetails.querySelector("h4").textContent = "New Title 3";
+    projectCardDetails.querySelector("p").textContent = "New text goes here 3.";
+
+    // Remove the previous link button if it exists
+    if (linkButton) {
+        projectCardDetails.removeChild(linkButton);
     }
+
+    // Check if the video element is a child of projectCardDetails before removing it
+    if (videoElement && videoElement.parentElement === projectCardDetails) {
+        projectCardDetails.removeChild(videoElement);
+    }
+
+    // Create and add the video element
+    videoElement = document.createElement('video');
+    videoElement.id = 'hoverVideo'; // Set an ID for the video element
+    videoElement.autoplay = true;
+    videoElement.muted = true;
+    videoElement.width = 540;
+    videoElement.height = 400;
+    videoElement.style.borderRadius = "17%"; // Apply rounded corners
+    const sourceElement = document.createElement('source');
+    sourceElement.src = '/assets/quiz-time-vid.mp4'; // Replace with your video URL
+    sourceElement.type = 'video/mp4';
+    videoElement.appendChild(sourceElement);
+    projectCardDetails.appendChild(videoElement);
+
+    // Create the link button for knowMoreButton3
+    createLinkButton("Visit", "https://terrosales.github.io/project-twelve/");
 });
 
